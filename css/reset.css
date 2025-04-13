@@ -26,7 +26,7 @@ a {
 
 /* Navbar Reset */
 .navbar {
-    background-color: #062767 !important;
+    background-color: #04163d;
     overflow: hidden;
 }
 
@@ -40,7 +40,7 @@ a {
 
 .navbar a:hover,
 .dropdown:hover .dropbtn {
-    background-color: rgb(246, 245, 249);
+    background-color: #04163d;
 }
 
 /* Dropdown Reset */
@@ -52,7 +52,7 @@ a {
     font-size: 16px;
     border: none;
     outline: none;
-    color: rgb(111, 10, 235);
+    color: #04163d;
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
@@ -86,6 +86,7 @@ a {
 /* Container Reset */
 .container, .container-section {
     background-color: #FFFFFF;
+    color: #04163d;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -98,7 +99,7 @@ a {
 
 /* Footer Reset */
 .footer {
-    background-color: #062767;
+    background-color: #04163d;
     color: #FFFFFF;
     text-align: center;
 }
