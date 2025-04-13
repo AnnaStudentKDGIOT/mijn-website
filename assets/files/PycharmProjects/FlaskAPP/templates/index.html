@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Character Profile</title>
+      <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+
+</head>
+<body>
+<header>
+    <nav>
+        <a href="/jos.vermeulen">jos</a>
+        <a href="/maria.jansen">marie</a>
+        <a href="/peter.klaassen">peter</a>
+    </nav>
+</header>
+    <h1>{{ user.naam }}</h1>
+    <p>Leeftijd: {{ user.leeftijd }}</p>
+    <p>Biografie: {{ user.characterbio }}</p>
+    <div class="image-container"> <img src="{{ user.image }}" alt="Afbeelding van {{ user.naam }}"> </div>
+
+
+</body>
+</html>

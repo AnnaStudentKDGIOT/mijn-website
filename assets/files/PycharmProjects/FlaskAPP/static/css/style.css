@@ -1,0 +1,41 @@
+/* Style for circular images */
+.circular-image {
+    border-radius: 50%; /* Makes the image circular */
+    overflow: hidden; /* Ensures the image stays within the circular shape */
+    border: 2px dotted red; /* Adds a red dotted border around the circular image */
+    width: 150px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
+}
+
+/* Example of applying the class to an image */
+/* Adjust the selector and class name according to your HTML structure */
+.image-container img {
+    display: block; /* Ensures the image takes up the full space within its container */
+    width: 25%; /* Ensures the image fills the circular container */
+    height: inherit; /* Maintains aspect ratio */
+}
+/* Centering the circular image */
+.image-container {
+    display: flex;
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center; /* Vertically centers the content */
+    height: 100vh; /* Makes the container take up the full height of the viewport */
+}
+
+.circular-image {
+    border-radius: 50%; /* Makes the image circular */
+    overflow: hidden; /* Ensures the image stays within the circular shape */
+    border: 2px dotted red; /* Adds a red dotted border around the circular image */
+    width: 150px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
+}
+
+.p {
+justify-content: center;
+align-items: center;
+}
+h1 {
+    font-weight: bold; /* Makes the text bold */
+    font-style: normal; /* Sets the font style to normal (roman) */
+    font-family: "Times New Roman", Times, serif; /* Sets the font family to a serif font */
+}
