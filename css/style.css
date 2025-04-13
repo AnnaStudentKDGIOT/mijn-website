@@ -31,7 +31,7 @@ body {
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: rgb(16, 5, 51);
+    background-color: rgb(242, 241, 245);
     color: #eeeeee;
 }
 
