@@ -32,6 +32,7 @@ body {
 
 .navbar a:hover, .dropdown:hover .dropbtn {
     background-color: rgb(16, 5, 51);
+    color: #eeeeee;
 }
 
 /* DROPDOWN MENU */
@@ -76,7 +77,7 @@ body {
 
 /* CONTAINERS & SECTIONS */
 .container, .container-section {
-    background-color: #062767;
+    background-color: #fefefe;
     color: #eef1f4;
     padding: 20px;
     border-radius: 10px;
