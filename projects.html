@@ -124,7 +124,15 @@
             <input type="text" id="filterInput" class="form-control" placeholder="Filter by name..." />
           </div>
         </div>
-    
+        <h5 class="card-title">${highlight(safeText(post.name), filter)}</h5>
+        <h5 class="card-title">${safeText(post.name)}</h5>
+<p class="card-text">${safeText(post.message)}</p>
+<div id="feedback" class="alert alert-success d-none" role="alert">
+    Message posted successfully!
+  </div>
+  
+  <div id="feedback" class="alert alert-success d-none" role="alert"></div>
+
         <!-- Form -->
         <form id="guestbookForm" class="mb-4">
           <input type="hidden" id="editIndex" />
@@ -140,7 +148,15 @@
         </form>
     
         <!-- Posts -->
-        <div id="messageBoard"></div>
+        <div id="messageBoard">
+
+
+
+
+
+
+
+        </div>
     
         <!-- Pagination -->
         <nav>

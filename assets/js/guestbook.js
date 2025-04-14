@@ -2,6 +2,7 @@ const POSTS_PER_PAGE = 5;
 let posts = JSON.parse(localStorage.getItem("guestbookPosts")) || [];
 let currentPage = 1;
 
+// DOM Elements
 const form = document.getElementById("guestbookForm");
 const nameInput = document.getElementById("name");
 const messageInput = document.getElementById("message");
@@ -11,22 +12,47 @@ const submitBtn = document.getElementById("submitBtn");
 const sortSelect = document.getElementById("sortSelect");
 const filterInput = document.getElementById("filterInput");
 const pagination = document.getElementById("pagination");
+const feedback = document.getElementById("feedback");
 
-function savePosts() {
+// Utility Functions
+const savePosts = () => {
   localStorage.setItem("guestbookPosts", JSON.stringify(posts));
-}
+};
 
-function renderPosts() {
+const safeText = (text) => {
+  const div = document.createElement("div");
+  div.textContent = text;
+  return div.innerHTML;
+};
+
+const highlight = (text, term) => {
+  if (!term) return safeText(text);
+  const regex = new RegExp(`(${term})`, "gi");
+  return safeText(text).replace(regex, `<mark>$1</mark>`);
+};
+
+const createPostElement = (post, filter = "") => {
+  const div = document.createElement("div");
+  div.className = "card mb-3";
+  div.innerHTML = `
+    <div class="card-body">
+      <h5 class="card-title">${highlight(post.name, filter)}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">${safeText(post.timestamp)}</h6>
+      <p class="card-text">${safeText(post.message)}</p>
+      <button class="btn btn-sm btn-warning me-2" onclick="editPost(${posts.indexOf(post)})">Edit</button>
+      <button class="btn btn-sm btn-danger" onclick="deletePost(${posts.indexOf(post)})">Delete</button>
+    </div>
+  `;
+  return div;
+};
+
+// Render Posts
+const renderPosts = () => {
   const sortOrder = sortSelect.value;
   const filter = filterInput.value.toLowerCase();
 
-  let displayPosts = posts.filter(p =>
-    p.name.toLowerCase().includes(filter)
-  );
-
-  if (sortOrder === "newest") {
-    displayPosts.reverse();
-  }
+  let displayPosts = posts.filter(p => p.name.toLowerCase().includes(filter));
+  if (sortOrder === "newest") displayPosts.reverse();
 
   const totalPages = Math.ceil(displayPosts.length / POSTS_PER_PAGE);
   if (currentPage > totalPages) currentPage = totalPages || 1;
@@ -34,19 +60,10 @@ function renderPosts() {
   const start = (currentPage - 1) * POSTS_PER_PAGE;
   const paginatedPosts = displayPosts.slice(start, start + POSTS_PER_PAGE);
 
-  // Clear and render posts
   messageBoard.innerHTML = "";
-  paginatedPosts.forEach((post, index) => {
-    const div = document.createElement("div");
-    div.className = "forum-post";
-    div.innerHTML = `
-      <h5>${post.name}</h5>
-      <div class="timestamp">${post.timestamp}</div>
-      <p>${post.message}</p>
-      <button class="btn btn-sm btn-warning" onclick="editPost(${posts.indexOf(post)})">Edit</button>
-      <button class="btn btn-sm btn-danger" onclick="deletePost(${posts.indexOf(post)})">Delete</button>
-    `;
-    messageBoard.appendChild(div);
+  paginatedPosts.forEach(post => {
+    const postElement = createPostElement(post, filter);
+    messageBoard.appendChild(postElement);
   });
 
   // Pagination
@@ -62,8 +79,9 @@ function renderPosts() {
     });
     pagination.appendChild(li);
   }
-}
+};
 
+// Event Listeners
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   const name = nameInput.value.trim();
@@ -86,15 +104,22 @@ form.addEventListener("submit", (e) => {
     savePosts();
     renderPosts();
     form.reset();
+
+    // Show feedback
+    feedback.classList.remove("d-none");
+    feedback.textContent = editIndex === "" ? "Message posted successfully!" : "Message updated!";
+    setTimeout(() => feedback.classList.add("d-none"), 3000);
   }
 });
 
 window.editPost = function(index) {
-  const post = posts[index];
-  nameInput.value = post.name;
-  messageInput.value = post.message;
-  editIndexInput.value = index;
-  submitBtn.textContent = "Update Message";
+  if (confirm("Do you want to edit this post?")) {
+    const post = posts[index];
+    nameInput.value = post.name;
+    messageInput.value = post.message;
+    editIndexInput.value = index;
+    submitBtn.textContent = "Update Message";
+  }
 };
 
 window.deletePost = function(index) {
@@ -105,7 +130,6 @@ window.deletePost = function(index) {
   }
 };
 
-// Filters & Sorters
 sortSelect.addEventListener("change", () => {
   currentPage = 1;
   renderPosts();
