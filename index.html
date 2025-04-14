@@ -122,25 +122,25 @@
           <div style="height: 180px;" id="map"></div>
         </div>
         <div class="col-md-6">
-          <form>
+          <form   id="contactsection" name="contactsection" method="post" data-netlify="true">
             <div class="mb-3">
               <label for="name" class="form-label">Name*</label>
-              <input type="text" class="form-control" id="name" placeholder="Jane Smith">
+              <input type="text" class="form-control" id="name" placeholder="Jane Smith" name="name">
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email address*</label>
-              <input type="email" class="form-control" id="email" placeholder="email@website.com">
+              <input type="email" class="form-control" id="email" placeholder="email@website.com" name="email">
             </div>
             <div class="mb-3">
               <label for="phone" class="form-label">Phone number*</label>
-              <input type="tel" class="form-control" id="phone" placeholder="555-555-5555">
+              <input type="tel" class="form-control" id="phone" placeholder="555-555-5555" name="phone">
             </div>
             <div class="mb-3">
               <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" rows="3"></textarea>
+              <textarea class="form-control" id="message" rows="3" name="message"></textarea>
             </div>
             <div class="form-check mb-3">
-              <input class="form-check-input" type="checkbox" id="consent">
+              <input class="form-check-input" type="checkbox" id="consent" name="consent">
               <label class="form-check-label" for="consent">
                 I allow this website to store my submission so they can respond to my inquiry.
               </label>
