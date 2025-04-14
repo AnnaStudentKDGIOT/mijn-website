@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/reset.css">
     <script src="/assets/js/leaflet.js" defer></script>
+    <script src="/assets/js/guestbook.js"></script>
 
   
 </head>
@@ -113,6 +114,45 @@
         </section>
        
     </div> 
+
+    <div class="container">
+        <h2 class="mb-4">Guestbook Forum</h2>
+    
+        <!-- Controls -->
+        <div class="row mb-3">
+          <div class="col-md-4">
+            <select id="sortSelect" class="form-select">
+              <option value="newest">Sort by Newest</option>
+              <option value="oldest">Sort by Oldest</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <input type="text" id="filterInput" class="form-control" placeholder="Filter by name..." />
+          </div>
+        </div>
+    
+        <!-- Form -->
+        <form id="guestbookForm" class="mb-4">
+          <input type="hidden" id="editIndex" />
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" id="name" class="form-control" required />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea id="message" class="form-control" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" id="submitBtn">Post Message</button>
+        </form>
+    
+        <!-- Posts -->
+        <div id="messageBoard"></div>
+    
+        <!-- Pagination -->
+        <nav>
+          <ul class="pagination" id="pagination"></ul>
+        </nav>
+      </div>
 
     
 

@@ -224,3 +224,20 @@ aside {
     margin-left: 20px;
     max-width: 300px;
 }
+
+
+.forum-post {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+  .timestamp {
+    font-size: 0.85rem;
+    color: #888;
+  }
+  .btn-sm {
+    margin-right: 5px;
+  }
