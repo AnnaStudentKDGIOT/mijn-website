@@ -225,11 +225,7 @@ img.rounded-responsive {
 }
 
 /* OPTIONAL: FLOATING SIDEBAR (BETTER APPROACH) */
-aside {
-    float: right;
-    margin-left: 20px;
-    max-width: 300px;
-}
+
 
 
 .forum-post {
