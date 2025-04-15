@@ -105,7 +105,9 @@ div.map {
         border-radius: 8px;
       
 }
-
+div.guestbook{
+    padding-left: 2%;
+}
 /* FOOTER */
 .footer {
     background-color: #04163d;
