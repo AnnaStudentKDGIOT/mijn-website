@@ -101,6 +101,14 @@ div.Socialmediabox {
     padding-bottom: 5px;
 
 }
+button.section1,button.section2,button.section3,button.section4
+{
+    position: fixed;
+    margin: auto;
+    padding: 1px;
+    border: #04163d 1px solid;
+    border-radius: 8px;
+}
 div.map {
     
         width: 100%;
