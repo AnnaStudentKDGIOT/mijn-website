@@ -35,107 +35,113 @@
             </div>
        
     </nav>
-  <!-- Hero Section -->
-  <section class="text-center py-5 text-dark">
-    <h6 class="text-uppercase">Craft your vision</h6>
-    <h1 class="display-5 fw-bold">Unleashing creativity through design</h1>
-    <img class="img-fluid w-75" src="/assets/images/sfeerbeelden/pexels-jakubzerdzicki-19089175.jpg" alt="Creative Design" class="img-fluid mt-4" style="max-width: 800px;">
-  </section>
-  
-        <!-- Contact Form & Sidebar -->
-  <div class="container">
-    <div class="row">
-      <!-- Form Section -->
-      <div class="col-md-8">
-        <form name="contactform" netlify  method="post" data-netlify="true">
-          <fieldset>
-            <legend class="fw-bold">Gegevens</legend>
-            <div class="row mb-3">
-              <div class="col-md-6">
-                <label class="form-label">Voornaam *</label>
-                <input type="text" class="form-control" name="Voornaam">
-              </div>
-              <div class="col-md-6">
-                <label class="form-label">Achternaam *</label>
-                <input type="text" class="form-control" name="achternaam">
-              </div>
-            </div>
 
-            <div class="row mb-3">
-              <div class="col-md-6">
-                <label class="form-label">Mobiel</label>
-                <input type="text" class="form-control" name="Mobiel">
+    <main>
+      <section class="text-center py-5 text-dark">
+        <h6 class="text-uppercase">Craft your vision</h6>
+        <h1 class="display-5 fw-bold">Unleashing creativity through design</h1>
+        <img class="img-fluid w-75" src="/assets/images/sfeerbeelden/pexels-jakubzerdzicki-19089175.jpg" alt="Creative Design" class="img-fluid mt-4" style="max-width: 800px;">
+      </section>
+      
+            <!-- Contact Form & Sidebar -->
+      <div class="container">
+        <div class="row">
+          <!-- Form Section -->
+          <div class="col-md-8">
+            <form name="contactform" netlify  method="post" data-netlify="true">
+              <fieldset>
+                <legend class="fw-bold">Gegevens</legend>
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <label class="form-label">Voornaam *</label>
+                    <input type="text" class="form-control" name="Voornaam">
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Achternaam *</label>
+                    <input type="text" class="form-control" name="achternaam">
+                  </div>
+                </div>
+    
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <label class="form-label">Mobiel</label>
+                    <input type="text" class="form-control" name="Mobiel">
+                  </div>
+                </div>
+              </fieldset>
+    
+              <fieldset>
+                <legend class="fw-bold">Accountgegevens</legend>
+                <div class="mb-3">
+                  <label class="form-label">E-mail *</label>
+                  <input type="email" class="form-control" name="text">
+                </div>
+              <div class="form-check my-3">
+                <input type="checkbox" class="form-check-input">
+                <label class="form-check-label">Algemene voorwaarden gelezen en goedgekeurd</label>
               </div>
-            </div>
-          </fieldset>
-
-          <fieldset>
-            <legend class="fw-bold">Accountgegevens</legend>
-            <div class="mb-3">
-              <label class="form-label">E-mail *</label>
-              <input type="email" class="form-control" name="text">
-            </div>
-          <div class="form-check my-3">
-            <input type="checkbox" class="form-check-input">
-            <label class="form-check-label">Algemene voorwaarden gelezen en goedgekeurd</label>
+    
+              <button type="submit" class="btn btn-primary">Verzenden</button>
+            </form>
           </div>
 
-          <button type="submit" class="btn btn-primary">Verzenden</button>
-        </form>
-      </div>
-
-      <!-- Contact Sidebar -->
+    </main>
+ 
        <br>
        <br>
        <br>
-      <div class="col-md-4">
-        <div class="p-3 border rounded bg-light">
-          <h5 class="fw-bold">CONTACT</h5>
-          <p>Email en sociale media<br><a href="mailto:anna.johnson@student.ap.be">anna.johnson@student.ap.be</a><br>+32 471 96 54 52</p>
-          <div class="d-flex gap-3">
-            <a href="#" class="text-dark"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="text-dark"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="text-dark"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="text-dark"><i class="bi bi-youtube"></i></a>
-            
+      <aside>
+        <div class="col-md-4">
+          <div class="p-3 border rounded bg-light">
+            <h5 class="fw-bold">CONTACT</h5>
+            <p>Email en sociale media<br><a href="mailto:anna.johnson@student.ap.be">anna.johnson@student.ap.be</a><br>+32 471 96 54 52</p>
+            <div class="d-flex gap-3">
+              <a href="#" class="text-dark"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="text-dark"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="text-dark"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-dark"><i class="bi bi-youtube"></i></a>
+              
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+      <div id="map">
+
+      </div>
+      <div  id="guestbook" class="container-fluid m-auto">
+        <h2 class="mb-4">Guestbook Forum</h2>
+    
+        <!-- Controls -->
+        <div class="row mb-3">
+          <div class="col-md-4">
+            
+          </div>
+        </div>
+        <h5 class="card-title"></h5>
+        <h5 class="card-title"></h5>
+    <p class="card-text"></p>
+        <!-- Form -->
+        <form id="guestbookForm" class="mb-4" method="post" name="guestbook" netlify data-netlify="true">
+          <input type="hidden" id="editIndex" />
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" id="name" class="form-control" required />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea id="message" class="form-control" rows="3" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" id="submitBtn">Post Message</button>
+        </form>
+        </div>
+      </aside>
 
  
-    <div id="map">
-
-    </div>
+    
 
  
-  <div  id="guestbook" class="container-fluid m-auto">
-    <h2 class="mb-4">Guestbook Forum</h2>
-
-    <!-- Controls -->
-    <div class="row mb-3">
-      <div class="col-md-4">
-        
-      </div>
-    </div>
-    <h5 class="card-title"></h5>
-    <h5 class="card-title"></h5>
-<p class="card-text"></p>
-    <!-- Form -->
-    <form id="guestbookForm" class="mb-4" method="post" name="guestbook" netlify data-netlify="true">
-      <input type="hidden" id="editIndex" />
-      <div class="mb-3">
-        <label for="name" class="form-label">Your Name</label>
-        <input type="text" id="name" class="form-control" required />
-      </div>
-      <div class="mb-3">
-        <label for="message" class="form-label">Your Message</label>
-        <textarea id="message" class="form-control" rows="3" name="message" required></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary" id="submitBtn">Post Message</button>
-    </form>
-    </div>
+  
 
   
     
