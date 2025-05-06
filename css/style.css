@@ -36,7 +36,7 @@ body {
 }
 
 .hero {
-    background-image: url('jouw-afbeelding.jpg');
+    background-image: url('/assets/images/sfeerbeelden/pexels-craigmdennis-57007.jpg');
     height: 500px;
     background-size: cover;
     background-position: center;
