@@ -22,8 +22,11 @@ body {
 }
 
 .aside {
-    float: right; 
-    width: 300px; 
+    display: flexbox;
+    float: left; 
+    width: 100px; 
+    height: auto;
+
     margin-left: 20px;
 }
 .navbar a {
@@ -47,7 +50,7 @@ body {
   }
   
   /* Tekst in de Hero */
-  .hero h1 {
+  .hero h1,h2,h3,h4,h5,h6 {
     color: white;
     font-size: 48px;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
