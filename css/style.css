@@ -35,6 +35,25 @@ body {
 
 }
 
+.hero {
+    background-image: url('jouw-afbeelding.jpg');
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Tekst in de Hero */
+  .hero h1 {
+    color: white;
+    font-size: 48px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    margin: 0;
+  }
+
 .navbar a:hover, .dropdown:hover .dropbtn {
     background-color: rgb(242, 241, 245);
     color: #eeeeee;
