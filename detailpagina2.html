@@ -1,173 +1,143 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>projects</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/reset.css">
-    <script src="/assets/js/leaflet.js" defer></script>
-    <script src="/assets/js/guestbook.js" defer></script>
-  
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/reset.css">
+  <script src="/assets/js/leaflet.js" defer></script>
+  <script src="/assets/js/guestbook.js" defer></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg text-white link-light">
-        <img id="logo"       class=""src="/assets/images/Logo/Firefly Do bears ever have an existential crisis wondering why people keep making them into teddy be (1).jpg" alt="" srcset="" width="200" height="150">
-        
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon">
-                    
 
-                </span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item link-light text-white"><a class="nav-link" href="/index.html">Home</a></li>
-                    <li class="nav-item link-light text-white"> <a class="nav-link" href="/projects.html">Projecten</a></li>
-                    <li class="nav-item  link-light text-white"><a class="nav-link" href="/portfolio.html">Portfolio</a></li>
-                    <li class="nav-item  link-light text-white"><a class="nav-link" href="/contact.html">Contact</a></li>
-                </ul>
-            </div>
-       
-    </nav>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img id="logo" src="/assets/images/Logo/Firefly Do bears ever have an existential crisis wondering why people keep making them into teddy be (1).jpg" alt="Logo" width="200" height="150">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/projects.html">Projecten</a></li>
+        <li class="nav-item"><a class="nav-link" href="/portfolio.html">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
+  <main class="container mt-5">
+    <!-- Hero section -->
+    <section class="hero mb-5"></section>
 
-    
-   
+    <!-- Projectdownloads -->
+    <section class="article-grid">
+      <h1>KDG Python programmeerwerk</h1>
+      <div class="article-item">
+        <a href="/assets/files/PycharmProjects/JARMUS.1.0ANNAJOHNSON/main.py" download class="btn btn-primary mb-2">JARMUS 1</a>
+        <a href="/assets/files/PycharmProjects/Jarmus 2.0/main.py" download class="btn btn-primary mb-2">JARMUS 2.0</a>
+        <a href="/assets/files/PycharmProjects/BTW/main.py" download class="btn btn-primary mb-2">BTW</a>
+        <a href="/assets/files/PycharmProjects/FlaskAPP/main.py" download class="btn btn-primary mb-2">FlaskAPP</a>
+        <a href="/assets/files/PycharmProjects/canvastracker2ndtry/main.py" download class="btn btn-primary mb-2">Canvastracker</a>
+        <a href="/assets/files/PycharmProjects/notiontracker/main.py" download class="btn btn-primary mb-2">Notiontracker</a>
 
-         <main>
-                <!-- Hero Section -->
-  <section class="hero">
-    
-    
-    
-  </section>
-          <div class="container mt-5">
-      
-            <!-- Collapsible Text -->   
-                  <div class="container mt-5">
-                    <section class="article-grid">
-                        <H1>KDG PYTHON programmeerwerk</H1>
-                        <div class="article-item">
-                      
-                            <a href="/assets/files/PycharmProjects/JARMUS.1.0ANNAJOHNSON/main.py" download class="btn btn-primary mb-3">JARMUS 1</a>
-                            <a href="/assets/files/PycharmProjects/Jarmus 2.0/main.py" download class="btn btn-primary mb-3">
-                                jarmus 2.0
-                            </a>
-                            <a href="/assets/files/PycharmProjects/BTW/main.py" download class="btn btn-primary mb-3">BTW</a>
-                            <a href="/assets/files/PycharmProjects/FlaskAPP/main.py" download class="btn btn-primary mb-3">FlaskAPP</a>
-                            <a href="/assets/files/PycharmProjects/canvastracker2ndtry/main.py" download class="btn btn-primary mb-3">Canvastracker</a>
-                            <a href="/assets/files/PycharmProjects/notiontracker/main.py" download class="btn btn-primary mb-3">notiontracker</a>
-                            <button class="btn btn-outline-primary mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#moreText" aria-expanded="false" aria-controls="moreText">
-                                Read More
-                              </button>
-    
-                              <div class="collapse" id="moreText">
-                                <h1>Projectdetailpagina – Python-programmeerwerk</h1>
+        <button class="btn btn-outline-primary mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#moreText">
+          Read More
+        </button>
 
-                                <h2>Projectnaam:</h2>
-                                <p>Automatisch Rapportagesysteem met Python</p>
-                                <br>
-                              
-                                <h2>Beschrijving:</h2>
-                                <p>
-                                  In dit project ontwikkelde ik een geautomatiseerd rapportagesysteem in Python dat data verwerkt uit CSV-bestanden, analyseert en omzet in overzichtelijke PDF-rapporten.<br>
-                                  Het doel was om handmatige dataverwerking en rapportage te vervangen door een efficiënte, herhaalbare oplossing.
-                                </p>
-                                <br>
-                              
-                                <h2>Doelstelling:</h2>
-                                <p>
-                                  – Data automatisch inlezen en filteren<br>
-                                  – Statistische analyse uitvoeren<br>
-                                  – Rapportages genereren in PDF-vorm<br>
-                                  – Planning via tijdschema (cronjob)
-                                </p>
-                                <br>
-                              
-                                <h2>Mijn rol:</h2>
-                                <p>
-                                  – Schrijven van Python-scripts voor dataverwerking<br>
-                                  – Gebruik van pandas voor data-analyse<br>
-                                  – PDF-generatie via ReportLab of fpdf<br>
-                                  – Toevoegen van logging en foutafhandeling<br>
-                                  – Documenteren van het project en de structuur
-                                </p>
-                                <br>
-                              
-                                <h2>Gebruikte tools en bibliotheken:</h2>
-                                <p>
-                                  – Python 3<br>
-                                  – pandas<br>
-                                  – fpdf / ReportLab<br>
-                                  – matplotlib (voor grafieken)<br>
-                                  – argparse en logging modules
-                                </p>
-                                <br>
-                              
-                                <h2>Resultaat:</h2>
-                                <p>
-                                  Het systeem is in staat om dagelijks automatisch rapporten te genereren op basis van aangeleverde data.<br>
-                                  Het bespaart tijd, vermindert menselijke fouten en maakt het rapportageproces inzichtelijk en schaalbaar.
-                                </p>
-          
-    
-    
-                              </div>
-                            
-                        </p>
-                        <a href="/portfolio.html">Back to portofolio</a>
-                    </div>
-          
-          
-          
-                        </div>
-          
-          
-          
-                    </section>
-          
-                </div>
-          
-          
-          
-                    <br><br>		
-                  </p>
-                </div>
+        <div class="collapse" id="moreText">
+          <h2>Projectdetailpagina – Python-programmeerwerk</h2>
+          <h3>Projectnaam:</h3>
+          <p>Automatisch Rapportagesysteem met Python</p>
 
-                <aside class="">
-                    <article class="article-item">
-                      <h3>Andere projecten
-                        SNB@Howest
-                      </h3>
-                      <ul>
-                        <li><p>nog toe te voegen</p></li>
-                        <li><p>nog toe te voegen</p></li>
-                        <li><p>nog toe te voegen</p></li>
-                        <li><p>nog toe te voegen</p></li>
-                                  
-                      </ul>
-                         
-                </aside>    
-                <section class="hero2">
-    
-    
-   
-                </section>
-              <footer class="footer">
-                  <p>&copy; 2025 My Website. All rights reserved. Anna Ella Johnson</p>
-              </footer>
-              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-          </body>
-          </html>
-          
+          <h3>Beschrijving:</h3>
+          <p>Een systeem dat CSV-data verwerkt en omzet in PDF-rapporten met behulp van Python.</p>
 
+          <h3>Doelstelling:</h3>
+          <ul>
+            <li>Data automatisch inlezen en filteren</li>
+            <li>Statistische analyse uitvoeren</li>
+            <li>PDF-rapportages genereren</li>
+            <li>Tijdgestuurde uitvoering (cronjob)</li>
+          </ul>
+
+          <h3>Mijn rol:</h3>
+          <ul>
+            <li>Python-scripting</li>
+            <li>Gebruik van pandas, fpdf/ReportLab</li>
+            <li>Foutafhandeling en logging</li>
+            <li>Documentatie schrijven</li>
+          </ul>
+
+          <h3>Tools & Bibliotheken:</h3>
+          <ul>
+            <li>Python 3</li>
+            <li>pandas</li>
+            <li>fpdf / ReportLab</li>
+            <li>matplotlib</li>
+            <li>argparse, logging</li>
+          </ul>
+
+          <h3>Resultaat:</h3>
+          <p>Dagelijkse automatische rapportage met schaalbare en foutbestendige structuur.</p>
+        </div>
+      </div>
+
+      <!-- Labo03 -->
+      <article class="article-item">
+        <h2>Labo 03</h2>
+        <img src="/assets/images/sfeerbeelden/pexels-craigmdennis-57007.jpg" class="img-fluid mb-2" alt="Labo03" width="300" height="300">
+        <p class="article-meta">door Anna Johnson</p>
+        <a href="/assets/files/LABO03.zip" download class="btn btn-primary">Download Labo03</a>
+        <details>
+          <summary>Opdracht 3</summary>
+          <p>
+            Welkom bij mijn blog! Ik ben Anna Ella Johnson en ik schrijf over technologie en mijn leerproces als jonge ontwikkelaar.
+          </p>
+        </details>
+      </article>
+
+      <!-- Labo04 -->
+      <article class="article-item">
+        <h2>Labo 04</h2>
+        <img src="/assets/images/sfeerbeelden/pexels-craigmdennis-57007.jpg" class="img-fluid mb-2" alt="Labo04" width="300" height="300">
+        <p class="article-meta">door Anna Ella Johnson</p>
+        <a href="/assets/files/LABO04.zip" download class="btn btn-primary">Download Labo04</a>
+        <details>
+          <summary>Opdracht 4</summary>
+          <p>
+            Inleiding tot webontwikkeling (HTML, CSS, JavaScript) met voorbeelden en tips. Geschikt voor beginners met interesse in tech.
+          </p>
+        </details>
+      </article>
+
+      <a href="/portfolio.html" class="btn btn-secondary mt-4">Back to portfolio</a>
+    </section>
+
+    <!-- Sidebar met andere projecten -->
+    <aside class="mt-5">
+      <h3>Andere projecten – SNB@Howest</h3>
+      <ul>
+        <li>nog toe te voegen</li>
+        <li>nog toe te voegen</li>
+        <li>nog toe te voegen</li>
+        <li>nog toe te voegen</li>
+      </ul>
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer mt-5 bg-light text-center py-3">
+    <p>&copy; 2025 My Website. All rights reserved. Anna Ella Johnson</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
