@@ -341,33 +341,4 @@ img.rounded-responsive {
       transform: translate(-50%, -50%);
     }
   }
-  .custom-sidebar {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 250px;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
-    z-index: 1050;
-  }
-
-  .custom-sidebar.active {
-    transform: translateX(0);
-  }
-
-  @media (min-width: 768px) {
-    /* Op grotere schermen: sidebar altijd zichtbaar aan de rechterkant */
-    .custom-sidebar {
-      transform: translateX(0);
-      position: absolute;
-      top: 50%;
-      right: 0;
-      transform: translateY(-50%);
-      height: auto;
-    }
-
-    #toggleSidebar {
-      display: none;
-    }
-  }
+  
