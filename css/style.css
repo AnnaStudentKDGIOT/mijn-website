@@ -24,10 +24,10 @@ body {
 .aside {
     display: flexbox;
     float: left; 
-    width: 100px; 
+    width: auto; 
     height: auto;
 
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .navbar a {
     font-size: 16px;
