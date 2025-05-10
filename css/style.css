@@ -38,6 +38,25 @@ body {
 
 }
 
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black; /* Black background */
+  width: 30px;  /* Size of the arrow */
+  height: 30px;  /* Size of the arrow */
+  border-radius: 50%;  /* Optional: makes the background circular */
+}
+
+.carousel-control-prev-icon {
+  border-width: 5px 8px 5px 0;
+  border-color: transparent black transparent transparent;
+}
+
+.carousel-control-next-icon {
+  border-width: 5px 0 5px 8px;
+  border-color: transparent transparent transparent black;
+}
+
 .hero {
     background-image: url('/assets/images/sfeerbeelden/pexels-craigmdennis-57007.jpg');
     height: 500px;
