@@ -341,4 +341,19 @@ img.rounded-responsive {
       transform: translate(-50%, -50%);
     }
   }
+  .custom-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1040;
+    overflow-y: auto;
+  }
+
+  .custom-sidebar.active {
+    transform: translateX(0);
+  }
   
