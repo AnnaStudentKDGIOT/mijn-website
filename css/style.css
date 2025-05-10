@@ -24,7 +24,7 @@ body {
 .aside {
     display: flexbox;
     float: left; 
-    width: auto; 
+    width: 50px; 
     height: auto;
 
     margin-left: 10px;
