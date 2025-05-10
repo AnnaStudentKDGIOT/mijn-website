@@ -356,4 +356,9 @@ img.rounded-responsive {
   .custom-sidebar.active {
     transform: translateX(0);
   }
+  #myAside.closed {
+    transform: translateX(-100%); /* Zorg dat de aside verdwijnt naar links */
+    transition: transform 0.3s ease;
+  }
+  
   
