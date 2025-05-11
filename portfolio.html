@@ -40,19 +40,36 @@
             </div>
        
     </nav>
-<aside id="mySidebar" class=" closed custom-sidebar position-fixed top-20 end-0 w-25 bg-light p-3 border-start shadow-sm ">
-      <!-- Toggle button (can be placed anywhere) -->
-  <h3>Andere projecten / persoonlijke skills ontwikkeling</h3>
-  <ul class="list-unstyled">
-    <li><a class="btn btn-primary btn-sm d-block mb-2 w-100" href="https://github.com/AnnaStudentKDGIOT/PortofolioBuild1">Portfolio KDG</a></li>
-    <li><a class="btn btn-primary btn-sm d-block mb-2 w-100" href="https://pythoninstitute.org/pcep">PCEP</a></li>
-    <li><a class="btn btn-primary btn-sm d-block mb-2 w-100" href="https://www.comptia.org/certifications/network">CompTIA Networking</a></li>
-    <li><a class="btn btn-primary btn-sm d-block mb-2 w-100" href="https://pythoninstitute.org/pcap">PCAP</a></li>
-    <li><a class="btn btn-primary btn-sm d-block mb-2 w-100" href="https://www.comptia.org/certifications/linux">CompTIA Linux</a></li>
-    <li><a class="btn btn-primary btn-sm d-block mb-2 w-100" href="http://www.cisco.com/site/us/en/learn/training-certifications/certifications/support-technician">Cisco Technician</a></li>
-  </ul>
-  
+        <!-- Toggle Button -->
+<button class="btn btn-primary position-fixed top-0 end-0 m-2 z-3" type="button"
+        data-bs-toggle="offcanvas" data-bs-target="#mySidebar" aria-controls="mySidebar">
+  Toggle Sidebar
+</button>
+
+<!-- Offcanvas Sidebar using <aside> -->
+<aside id="mySidebar"
+       class="offcanvas offcanvas-end w-25 bg-light p-3 border-start shadow-sm"
+       tabindex="-1"
+       aria-labelledby="sidebarLabel">
+
+  <header class="offcanvas-header">
+    <h3 id="sidebarLabel">Andere projecten / persoonlijke skills ontwikkeling</h3>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </header>
+
+  <main class="offcanvas-body">
+    <ul class="list-unstyled">
+      <li><a class="btn btn-primary btn-sm d-block mb-2 w-100" href="https://github.com/AnnaStudentKDGIOT/PortofolioBuild1">Portfolio KDG</a></li>
+      <li><a class="btn btn-primary btn-sm d-block mb-2 w-100" href="https://pythoninstitute.org/pcep">PCEP</a></li>
+      <li><a class="btn btn-primary btn-sm d-block mb-2 w-100" href="https://www.comptia.org/certifications/network">CompTIA Networking</a></li>
+      <li><a class="btn btn-primary btn-sm d-block mb-2 w-100" href="https://pythoninstitute.org/pcap">PCAP</a></li>
+      <li><a class="btn btn-primary btn-sm d-block mb-2 w-100" href="https://www.comptia.org/certifications/linux">CompTIA Linux</a></li>
+      <li><a class="btn btn-primary btn-sm d-block mb-2 w-100" href="http://www.cisco.com/site/us/en/learn/training-certifications/certifications/support-technician">Cisco Technician</a></li>
+    </ul>
+  </main>
+
 </aside>
+
 
     <!-- Toggle button (can be placed anywhere) -->
 <!-- Sidebar -->
