@@ -28,6 +28,8 @@ a {
 .navbar {
     background-color: #04163d;
     overflow: hidden;
+    align-self: center;
+    align-content: center;
 }
 
 .navbar a {
@@ -36,6 +38,7 @@ a {
     color: rgb(242, 241, 247);
     padding: 14px 16px;
     text-align: center;
+    align-items: center;
 }
 
 .navbar a:hover,
