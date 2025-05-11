@@ -1,21 +1,8 @@
-const aside = document.getElementById('myAside');
-const closeBtn = document.getElementById('closeAside');
-const overlay = document.getElementById('overlay');
-const openBtn = document.getElementById('openAside'); // jouw bestaande openknop
+const aside = document.getElementById('mySidebar');
+const toggleBtn = document.getElementById('toggleSidebar');
 
-// Open aside
-openBtn.addEventListener('click', () => {
-  aside.classList.add('open');
-  aside.classList.remove('closed');
-  overlay.classList.remove('hidden');
+// Toggle aside visibility
+toggleBtn.addEventListener('click', () => {
+  aside.classList.toggle('open');
+  aside.classList.toggle('closed');
 });
-
-// Sluit aside
-function closeAside() {
-  aside.classList.remove('open');
-  aside.classList.add('closed');
-  overlay.classList.add('hidden');
-}
-
-closeBtn.addEventListener('click', closeAside);
-overlay.addEventListener('click', closeAside);

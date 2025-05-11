@@ -49,6 +49,16 @@ body {
     border-radius: 8px;
 }
 
+#mySidebar.closed {
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+#mySidebar.open {
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
 
 /* HERO SECTION */
 .hero,

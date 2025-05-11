@@ -145,3 +145,12 @@ img {
     display: table;
     clear: both;
 }
+#mySidebar.closed {
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+#mySidebar.open {
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
+}
