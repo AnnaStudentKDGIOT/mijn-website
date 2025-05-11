@@ -140,3 +140,8 @@ img {
     text-align: center;
     padding: 20px;
 }
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}

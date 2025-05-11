@@ -40,13 +40,15 @@ body {
 }
 
 /* ASIDE */
-.aside {
-  float: left;
-  width: 50px;
-  height: 100pt;
-  margin-left: 10px;
-  padding: 10px;
+.aside { 
+    float: left; /* of right */
+    width: 25%;  /* pas aan naar wens */
+    margin: 0 20px 20px 0;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
 }
+
 
 /* HERO SECTION */
 .hero,
