@@ -154,3 +154,27 @@ img {
   transform: translateX(0);
   transition: transform 0.3s ease-in-out;
 }
+:root {
+  --navbar-height: 56px;
+  --sidebar-width: 250px;
+}
+.main {
+    margin-top: 56px;
+}
+
+/* Fixed sidebar */
+#sidebar {
+  position: fixed;
+  top: var(--navbar-height);
+  left: 0;
+  width: var(--sidebar-width);
+  height: calc(100vh - var(--navbar-height));
+  overflow-y: auto;
+  z-index: 1020;
+}
+
+/* Push main content aside and down */
+#main-content {
+  margin-top: var(--navbar-height);
+  margin-left: var(--sidebar-width);
+}

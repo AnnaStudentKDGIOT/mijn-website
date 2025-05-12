@@ -20,7 +20,7 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg text-white link-light">
+    <nav class="navbar navbar-expand-lg text-white link-light navbar navbar-expand-lg navbar-light bg-light border-bottom fixed-top">
         <img id="logo"       class=""src="/assets/images/Logo/Firefly Do bears ever have an existential crisis wondering why people keep making them into teddy be (1).jpg" alt="" srcset="" width="200" height="150">
         
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -30,7 +30,7 @@
                 </span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto ">
                     <li class="nav-item link-light text-white"><a class="nav-link" href="/index.html">Home</a></li>
                     <li class="nav-item link-light text-white"> <a class="nav-link" href="/portfolio.html">Portofolio</a></li>
                     <li class="nav-item  link-light text-white"><a class="nav-link" href="/contact.html">Contact</a></li>
@@ -40,20 +40,15 @@
             </div>
        
     </nav>
-        <!-- Toggle Button -->
-
-
-<!-- Offcanvas Sidebar using <aside> -->
-    <button class="btn btn-primary position-fixed top-0 end-0 m-2 z-3" type="button"
-                    data-bs-toggle="offcanvas" data-bs-target="#mySidebar" aria-controls="mySidebar">
-                    Toggle Sidebar
-                    </button>
+      
+    
 
   <aside id="mySidebar"
-       class="offcanvas offcanvas-end offcanvas-lg d-lg-block w-100 w-lg-25 bg-light p-3 border-start shadow-sm"
+       class="offcanvas offcanvas-end offcanvas-lg d-lg-block w-100 w-lg-25 bg-light p-4 border-start shadow-sm"
        tabindex="-1"
        aria-labelledby="sidebarLabel">
 
+  <!-- Sidebar Header -->
   <div class="offcanvas-header d-flex justify-content-between align-items-center">
     <h3 class="offcanvas-title fs-5 mb-0" id="sidebarLabel">
       Andere projecten / persoonlijke skills ontwikkeling
@@ -61,41 +56,43 @@
     <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas" aria-label="Sluiten"></button>
   </div>
 
-  <div class="offcanvas-body">
+  <!-- Sidebar Body with Links -->
+  <div class="offcanvas-body p-3">
     <ul class="list-unstyled">
       <li>
-        <a class="btn btn-primary btn-sm d-block mb-2 w-100" href="https://github.com/AnnaStudentKDGIOT/PortofolioBuild1" target="_blank" rel="noopener">
-          Portfolio KDG
+        <a class="btn btn-primary btn-sm d-block mb-3 w-100 text-white" href="https://github.com/AnnaStudentKDGIOT/PortofolioBuild1" target="_blank" rel="noopener">
+          <i class="bi bi-github me-2"></i> Portfolio KDG
         </a>
       </li>
       <li>
-        <a class="btn btn-primary btn-sm d-block mb-2 w-100" href="https://pythoninstitute.org/pcep" target="_blank" rel="noopener">
-          PCEP
+        <a class="btn btn-primary btn-sm d-block mb-3 w-100 text-white" href="https://pythoninstitute.org/pcep" target="_blank" rel="noopener">
+          <i class="bi bi-braces me-2"></i> PCEP
         </a>
       </li>
       <li>
-        <a class="btn btn-primary btn-sm d-block mb-2 w-100" href="https://www.comptia.org/certifications/network" target="_blank" rel="noopener">
-          CompTIA Networking
+        <a class="btn btn-primary btn-sm d-block mb-3 w-100 text-white" href="https://www.comptia.org/certifications/network" target="_blank" rel="noopener">
+          <i class="bi bi-diagram-3 me-2"></i> CompTIA Networking
         </a>
       </li>
       <li>
-        <a class="btn btn-primary btn-sm d-block mb-2 w-100" href="https://pythoninstitute.org/pcap" target="_blank" rel="noopener">
-          PCAP
+        <a class="btn btn-primary btn-sm d-block mb-3 w-100 text-white" href="https://pythoninstitute.org/pcap" target="_blank" rel="noopener">
+          <i class="bi bi-code me-2"></i> PCAP
         </a>
       </li>
       <li>
-        <a class="btn btn-primary btn-sm d-block mb-2 w-100" href="https://www.comptia.org/certifications/linux" target="_blank" rel="noopener">
-          CompTIA Linux
+        <a class="btn btn-primary btn-sm d-block mb-3 w-100 text-white" href="https://www.comptia.org/certifications/linux" target="_blank" rel="noopener">
+          <i class="bi bi-laptop me-2"></i> CompTIA Linux
         </a>
       </li>
       <li>
-        <a class="btn btn-primary btn-sm d-block mb-2 w-100" href="http://www.cisco.com/site/us/en/learn/training-certifications/certifications/support-technician" target="_blank" rel="noopener">
-          Cisco Technician
+        <a class="btn btn-primary btn-sm d-block mb-3 w-100 text-white" href="http://www.cisco.com/site/us/en/learn/training-certifications/certifications/support-technician" target="_blank" rel="noopener">
+          <i class="bi bi-router me-2"></i> Cisco Technician
         </a>
       </li>
     </ul>
   </div>
 </aside>
+
 
 
 
