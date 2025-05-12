@@ -15,10 +15,13 @@
     line-height: 1.6;
     background-color: #f2f3f6;
     color: #141C26;
-    padding-top: 110px;
+    
 }
 .main {
      padding-left: 10%;
+     padding-top: 10%;
+     padding: 10%;
+     scroll-padding: 10%;
 }
 
 a {
