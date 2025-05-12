@@ -21,6 +21,7 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  padding-bottom: 300px;
 }
 
 .navbar a {
@@ -142,7 +143,7 @@ img.logo {
 }
 
 :root {
-  --navbar-height: 25px;
+  --navbar-height: 75px;
   --sidebar-width: 75px;
 }
 

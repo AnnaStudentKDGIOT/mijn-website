@@ -15,7 +15,7 @@
     line-height: 1.6;
     background-color: #f2f3f6;
     color: #141C26;
-    padding-top: 140px;
+    padding-top: 300px;
 }
 .main {
      padding-left: 10%;
@@ -160,7 +160,7 @@ img {
   transition: transform 0.3s ease-in-out;
 }
 :root {
-  --navbar-height: 25px;
+  --navbar-height: 75px;
   --sidebar-width: 75px;
 }
 .main {
