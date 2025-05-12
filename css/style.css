@@ -140,8 +140,8 @@ img.logo {
 }
 
 :root {
-  --navbar-height: 56px;
-  --sidebar-width: 250px;
+  --navbar-height: 25px;
+  --sidebar-width: 150px;
 }
 
 .main {

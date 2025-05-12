@@ -12,7 +12,7 @@ html, body {
     font-size: 100%;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    background-color: #04163d;
+    background-color: #f2f3f6;
     color: #141C26;
     padding-top: 140px;
 }
@@ -156,8 +156,8 @@ img {
   transition: transform 0.3s ease-in-out;
 }
 :root {
-  --navbar-height: 56px;
-  --sidebar-width: 250px;
+  --navbar-height: 25px;
+  --sidebar-width: 150px;
 }
 .main {
     margin-top: 56px;
