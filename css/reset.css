@@ -40,9 +40,13 @@ button {
 }
 
 .logo {
-    width: 300px;
+    width: 150px;
     height: 150px;
     align-self: center;
+}
+.img {
+    align-items: center;
+    justify-content: space-around;
 }
 
 /* UTILITY CLASSES */
