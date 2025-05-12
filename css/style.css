@@ -160,7 +160,7 @@ img.logo {
   width: var(--sidebar-width);
   height: calc(56px- var(--navbar-height));
   overflow-y: auto;
-  z-index: 1020;
+  z-index: 560;
 }
 
 /* Push main content aside and down */
