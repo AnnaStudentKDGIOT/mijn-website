@@ -171,9 +171,9 @@ img {
 #sidebar {
   position: fixed;
   top: var(--navbar-height);
-  left: 100px;
+  left: 0px;
   width: var(--sidebar-width);
-  height: calc(100px - var(--navbar-height));
+  height: calc(56px - var(--navbar-height));
   overflow-y: auto;
   z-index: 1020;
 }
