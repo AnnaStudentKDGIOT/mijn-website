@@ -169,7 +169,7 @@ img {
   top: var(--navbar-height);
   left: 0;
   width: var(--sidebar-width);
-  height: calc(100vh - var(--navbar-height));
+  height: calc(100px - var(--navbar-height));
   overflow-y: auto;
   z-index: 1020;
 }
