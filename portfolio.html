@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="/css/reset.css">
     <script src="/assets/js/leaflet.js" defer></script>
     <script src="/assets/js/guestbook.js" defer></script>
-    <script src="/assets/js/aside.js" defer></script>
+  
     
   
 
@@ -47,28 +47,55 @@
 </button>
 
 <!-- Offcanvas Sidebar using <aside> -->
-<aside id="mySidebar"
-       class="offcanvas offcanvas-end w-25 bg-light p-3 border-start shadow-sm"
+
+  <aside id="mySidebar"
+       class="offcanvas offcanvas-end offcanvas-lg d-lg-block w-100 w-lg-25 bg-light p-3 border-start shadow-sm"
        tabindex="-1"
        aria-labelledby="sidebarLabel">
 
-  <header class="offcanvas-header">
-    <h3 id="sidebarLabel">Andere projecten / persoonlijke skills ontwikkeling</h3>
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </header>
+  <div class="offcanvas-header d-flex justify-content-between align-items-center">
+    <h3 class="offcanvas-title fs-5 mb-0" id="sidebarLabel">
+      Andere projecten / persoonlijke skills ontwikkeling
+    </h3>
+    <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas" aria-label="Sluiten"></button>
+  </div>
 
-  <main class="offcanvas-body">
+  <div class="offcanvas-body">
     <ul class="list-unstyled">
-      <li><a class="btn btn-primary btn-sm d-block mb-2 w-100" href="https://github.com/AnnaStudentKDGIOT/PortofolioBuild1">Portfolio KDG</a></li>
-      <li><a class="btn btn-primary btn-sm d-block mb-2 w-100" href="https://pythoninstitute.org/pcep">PCEP</a></li>
-      <li><a class="btn btn-primary btn-sm d-block mb-2 w-100" href="https://www.comptia.org/certifications/network">CompTIA Networking</a></li>
-      <li><a class="btn btn-primary btn-sm d-block mb-2 w-100" href="https://pythoninstitute.org/pcap">PCAP</a></li>
-      <li><a class="btn btn-primary btn-sm d-block mb-2 w-100" href="https://www.comptia.org/certifications/linux">CompTIA Linux</a></li>
-      <li><a class="btn btn-primary btn-sm d-block mb-2 w-100" href="http://www.cisco.com/site/us/en/learn/training-certifications/certifications/support-technician">Cisco Technician</a></li>
+      <li>
+        <a class="btn btn-primary btn-sm d-block mb-2 w-100" href="https://github.com/AnnaStudentKDGIOT/PortofolioBuild1" target="_blank" rel="noopener">
+          Portfolio KDG
+        </a>
+      </li>
+      <li>
+        <a class="btn btn-primary btn-sm d-block mb-2 w-100" href="https://pythoninstitute.org/pcep" target="_blank" rel="noopener">
+          PCEP
+        </a>
+      </li>
+      <li>
+        <a class="btn btn-primary btn-sm d-block mb-2 w-100" href="https://www.comptia.org/certifications/network" target="_blank" rel="noopener">
+          CompTIA Networking
+        </a>
+      </li>
+      <li>
+        <a class="btn btn-primary btn-sm d-block mb-2 w-100" href="https://pythoninstitute.org/pcap" target="_blank" rel="noopener">
+          PCAP
+        </a>
+      </li>
+      <li>
+        <a class="btn btn-primary btn-sm d-block mb-2 w-100" href="https://www.comptia.org/certifications/linux" target="_blank" rel="noopener">
+          CompTIA Linux
+        </a>
+      </li>
+      <li>
+        <a class="btn btn-primary btn-sm d-block mb-2 w-100" href="http://www.cisco.com/site/us/en/learn/training-certifications/certifications/support-technician" target="_blank" rel="noopener">
+          Cisco Technician
+        </a>
+      </li>
     </ul>
-  </main>
-
+  </div>
 </aside>
+
 
 
     <!-- Toggle button (can be placed anywhere) -->
