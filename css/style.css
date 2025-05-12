@@ -11,6 +11,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
   padding: 20px;
+  padding-left: 10%;
 }
 
 /* NAVIGATION BAR */
@@ -47,6 +48,7 @@ body {
     padding: 10px;
     background-color: #f5f5f5;
     border-radius: 8px;
+    margin-left: 25px;
 }
 
 #mySidebar.closed {
@@ -141,20 +143,21 @@ img.logo {
 
 :root {
   --navbar-height: 25px;
-  --sidebar-width: 150px;
+  --sidebar-width: 75px;
 }
 
 .main {
     margin-top: 56px;
+    margin-left: 56px;
 }
 
 /* Fixed sidebar */
 #sidebar {
   position: fixed;
   top: var(--navbar-height);
-  left: 0;
+  left: 100;
   width: var(--sidebar-width);
-  height: calc(100vh - var(--navbar-height));
+  height: calc(100px- var(--navbar-height));
   overflow-y: auto;
   z-index: 1020;
 }
