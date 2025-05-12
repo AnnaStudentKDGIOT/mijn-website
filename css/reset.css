@@ -36,9 +36,9 @@ button {
     transition: all 0.3s ease;
 }
 
-img {
-    width: 400px;
-    height: 250px;
+.logo {
+    width: 300px;
+    height: 150px;
     align-self: center;
 }
 
@@ -69,13 +69,14 @@ img {
     background-color: #04163d;
     overflow: hidden;
     text-align: center;
+    height: 56px;
 }
 
 .navbar a {
     display: block;
     font-size: 16px;
     color: #f2f1f7;
-    padding: 14px 16px;
+    padding: 7.5px 8px;
 }
 
 .navbar a:hover,

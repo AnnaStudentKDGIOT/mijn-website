@@ -21,7 +21,7 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  padding-bottom: 300px;
+  padding-bottom: 200px;
 }
 
 .navbar a {
@@ -128,7 +128,7 @@ body {
 }
 
 /* LOGO */
-img.logo {
+.logo {
   padding: 1px;
 }
 
