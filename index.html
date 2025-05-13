@@ -47,20 +47,17 @@
   </div>
 </nav>
 
-  
 
-   <aside  id="mySidebar"class="  position-fixed top-50 end-0 start-100 w-100 bg-light p-3 border-start shadow-sm translate-middle accordion collapse-horizontal">
-             <div class="accordion-item">
-    <h2 class="accordion-header" id="asideHeading">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#asideCollapse" aria-expanded="true" aria-controls="asideCollapse">
-        Sidebar 
-      </button>
-    </h2>
-  <!-- Sidebar Header -->
-  <div id="asideCollapse" class="accordion-collapse collapse show" aria-labelledby="asideHeading" data-bs-parent="#sidebarAccordion">
-    <section class="accordion-body">
-       <h5 class="mb-3">📚 Currently Reading</h5>
-  <ul class="list-unstyled">
+
+
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+    Toggle width collapse
+  </button>
+  <aside class="position-fixed bg-light  top-0 start-0 border-start shadow-sm collapse-horizontal" id="asideCollapsible" >
+    <div class="collapse collapse-horizontal" id="collapseWidthExample">
+      <div class="card card-body">
+       <ul class="list-unstyled">
+         <h5 class="mb-3">📚 Currently Reading</h5>
     <li>
       <strong>JavaScript for Dummies</strong><br>
       <small>By Chris Minnick & Eva Holland</small>
@@ -70,15 +67,15 @@
       <small>By Jan Smets</small>
     </li>
   </ul>
-     
+    </div>
+
+    </div>
+    
         
-    </section>
-   
-      </div>
-   </div> 
-    
-    
-  </aside>
+</aside>
+  
+
+
   <main>
   <!-- Hero Section -->
   <section class="hero2">
