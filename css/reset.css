@@ -103,11 +103,15 @@ button {
     cursor: pointer;
 }
 
-section.asideCollapsible {
+.asideCollapsible {
 
     min-height: 120px
 
 }
+.card
+{ width: 300px;}
+.card-body
+{width: 300px;}
 
 .dropdown-content {
     display: block;
