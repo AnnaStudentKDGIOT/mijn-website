@@ -103,6 +103,12 @@ button {
     cursor: pointer;
 }
 
+section.asideCollapsible {
+
+    min-height: 120px
+
+}
+
 .dropdown-content {
     display: block;
     position: absolute;
