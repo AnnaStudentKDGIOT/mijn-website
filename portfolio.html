@@ -44,13 +44,26 @@
       
     
 
-  <aside class="position-fixed top-50 end-0 start-100 w-auto bg-light p-3 border-start shadow-sm translate-middle"
+  <aside class="position-fixed top-50 end-0 start-100 w-100 bg-light p-3 border-start shadow-sm translate-middle accordion" id="sidebarAccordion"
        tabindex="-1"
        aria-labelledby="sidebarLabel">
 
+
+       <div class="accordion-item">
+    <h2 class="accordion-header" id="asideHeading">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#asideCollapse" aria-expanded="true" aria-controls="asideCollapse">
+        Sidebar 
+      </button>
+    </h2>
+
   <!-- Sidebar Header -->
+    <section>
+
+    
+  <div id="asideCollapse" class="accordion-collapse collapse show" aria-labelledby="asideHeading" data-bs-parent="#sidebarAccordion">
   
-    <h5 class="offcanvas-title fs-5 mb-0" id="sidebarLabel">
+    <section class="accordion-body">
+       <h5 class="offcanvas-title fs-5 mb-0" id="sidebarLabel">
       Andere projecten
     </h5>  
         <p class="fs-6"><a class="w-auto text-black" href="https://www.comptia.org/certifications/network" target="_blank">Networking</a></p>
@@ -58,8 +71,10 @@
         <p class="fs-6"><a class="w-auto text-black" href="https://github.com/AnnaStudentKDGIOT/PortofolioBuild1" target="_blank">KDG</a></p>
         <p class="fs-6"><a class="w-auto text-black" href="https://pythoninstitute.org/pcap" target="_blank">PCAP</a></p>
         <p class="fs-6"><a class="w-auto text-black" href="https://www.comptia.org/certifications/linux" target="_blank">Linux</a></p>
+    </section>
+   
       </div>
-    </div>
+    </section>
 </aside>
 
 
