@@ -41,6 +41,11 @@ body {
   color: #eeeeee;
 }
 
+.card
+{ width: auto;}
+.card-body
+{width: auto;}
+
 /* ASIDE */
 .aside { 
     float: left; /* of right */
