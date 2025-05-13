@@ -17,7 +17,7 @@ body {
 /* NAVIGATION BAR */
 .navbar {
   background-color: #04163d;
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -30,7 +30,7 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
 }
@@ -89,7 +89,7 @@ body {
 
 /* DROPDOWN MENU */
 .dropdown {
-  position: relative;
+  position: absolute;
 }
 
 .dropdown .dropbtn {
@@ -103,7 +103,7 @@ body {
 }
 
 .dropdown-content {
-  display: none;
+  display: block;
   position: absolute;
   background-color: #ffffff;
   min-width: 160px;
