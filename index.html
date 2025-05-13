@@ -49,8 +49,17 @@
 
   
 
-   <aside  id="mySidebar"class="  position-fixed top-50 end-0 start-100 w-100 bg-light p-3 border-start shadow-sm translate-middle">
-  <h5 class="mb-3">📚 Currently Reading</h5>
+   <aside  id="mySidebar"class="  position-fixed top-50 end-0 start-100 w-100 bg-light p-3 border-start shadow-sm translate-middle accordion collapse-horizontal">
+             <div class="accordion-item">
+    <h2 class="accordion-header" id="asideHeading">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#asideCollapse" aria-expanded="true" aria-controls="asideCollapse">
+        Sidebar 
+      </button>
+    </h2>
+  <!-- Sidebar Header -->
+  <div id="asideCollapse" class="accordion-collapse collapse show" aria-labelledby="asideHeading" data-bs-parent="#sidebarAccordion">
+    <section class="accordion-body">
+       <h5 class="mb-3">📚 Currently Reading</h5>
   <ul class="list-unstyled">
     <li>
       <strong>JavaScript for Dummies</strong><br>
@@ -61,7 +70,12 @@
       <small>By Jan Smets</small>
     </li>
   </ul>
-
+     
+        
+    </section>
+   
+      </div>
+   </div> 
     
     
   </aside>
