@@ -50,7 +50,19 @@
       
     
 
-  <aside class="position-fixed top-50 end-0 start-100 w-50 bg-light p-3 border-start shadow-sm translate-middle accordion collapse-horizontal" id="sidebarAccordion"
+  
+
+
+<p>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+    Toggle width collapse
+  </button>
+</p>
+<section id="asideCollapsible">
+  <section class="collapse collapse-horizontal" id="collapseWidthExample">
+    <section class="card card-body">
+      This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
+      <aside class="position-fixed"
        tabindex="-1"
        aria-labelledby="sidebarLabel">
        <div class="accordion-item">
@@ -73,17 +85,6 @@
       </div>
    </div> 
 </aside>
-
-
-<p>
-  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-    Toggle width collapse
-  </button>
-</p>
-<section id="asideCollapsible">
-  <section class="collapse collapse-horizontal" id="collapseWidthExample">
-    <section class="card card-body" style="width: 300px;">
-      This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
     </section>
   </section>
 </section>
