@@ -85,7 +85,22 @@ body {
   max-width: 300px;
   margin: 0 auto;
 }
-
+ #weather-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        #weather-section h2 {
+            text-align: center;
+        }
+        #weather-section .weather-details {
+            margin-top: 15px;
+        }
+        #weather-section .weather-details p {
+            margin: 5px 0;}
 #weather-section h2 {
   text-align: center;
 }
