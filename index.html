@@ -102,12 +102,25 @@
   <section id="welkom"></section>
       <h1>Weather Information</h1>
     
-    <label for="city">Enter city name:</label>
+    <label for="city">Tik de Naam van het stad in:</label>
     <input type="text" id="city" placeholder="e.g., London">
-    <button onclick="getWeather()">Get Weather</button>
+    <button onclick="getWeather()">Weervoorspelling</button>
 
-    <section id="weather"></section>
+    
   
+</section>
+<section id="weather-section">
+
+ <div id="weather-section">
+    <h2>Weather Forecast</h2>
+    <div class="weather-details">
+      <p><strong>locatie:</strong> <span id="location"></span></p>
+      <p><strong>Temperatuur:</strong> <span id="temperature"></span> °C</p>
+      <p><strong>Weer:</strong> <span id="weather-description"></span></p>
+    </div>
+    <div id="error-message" style="color: red; display: none;">Kan de data niet ophalen probeer nog een keer later</div>
+  </div>
+
 </section>
 
 

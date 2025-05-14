@@ -1,21 +1,25 @@
-async function getWeather() {
+ // API Key for OpenWeatherMap
+        const apiKey = 'f32f9b8e576065966ba174743ebb30f0';  // Replace with your OpenWeatherMap API key
+
+        // Function to get weather based on the city entered by the user
+        async function getWeather() {
             const city = document.getElementById('city').value;
-            const apiKey = 'f32f9b8e576065966ba174743ebb30f0'; // Replace with your OpenWeatherMap API key
-            const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`; // Use 'metric' for Celsius, or 'imperial' for Fahrenheit
+            const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;  // Use 'metric' for Celsius
 
             try {
                 const response = await fetch(apiUrl);
-                if (!response.ok) throw new Error('City not found');
+                if (!response.ok) throw new Error('City not found'); // Handle error if city is not found
 
                 const data = await response.json();
-                displayWeather(data);
+                displayWeather(data);  // Display the fetched weather data
             } catch (error) {
                 document.getElementById('weather').innerHTML = 'Error: ' + error.message;
             }
         }
 
+        // Function to display the weather data on the page
         function displayWeather(data) {
-            const weatherDiv = document.getElementById('weather');
+            const weatherDiv = document.getElementById('weather-section');
             const city = data.name;
             const temp = data.main.temp;
             const description = data.weather[0].description;
@@ -27,4 +31,7 @@ async function getWeather() {
                 <p>Temperature: ${temp}°C</p>
                 <p>Description: ${description}</p>
             `;
+
+            // Hide the error message if the data is fetched successfully
+            document.getElementById('error-message').style.display = 'none';
         }
