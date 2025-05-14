@@ -63,6 +63,15 @@ div#map {
 .card-body
 {width: auto;}
 
+
+
+#weather body {
+            margin-top: 20px;
+            font-family: sans-serif;
+            padding: 20px;
+            text-align: center;
+        }
+
 /* ASIDE */
 .aside { 
     float: left; /* of right */
