@@ -44,6 +44,13 @@ a:hover {
 #welkom {
     height: 180px;
 }
+#weather body {
+            margin-top: 20px;
+            font-family: sans-serif;
+            padding: 20px;
+            text-align: center;
+        }
+
 
 button {
     cursor: pointer;
