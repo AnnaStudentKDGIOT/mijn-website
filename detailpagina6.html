@@ -109,67 +109,89 @@
                 </button>
 
                 <div class="collapse" id="moreText">
-                   <p>
-                      <br>
-                    Beveiliging & Wetgeving in IT-omgevingen
-Beveiliging in een IT-omgeving is vandaag de dag niet meer weg te denken. In deze module heb ik inzicht verworven in wat IT-beveiliging inhoudt en welke wet- en regelgeving van toepassing is op het werken met digitale systemen en persoonsgegevens. Als toekomstige IT-professional moet ik zowel technische maatregelen kunnen implementeren als juridische verplichtingen correct kunnen naleven. Deze pagina vat mijn belangrijkste inzichten samen over beveiligingsdomeinen, relevante Belgische en Europese wetgeving, en hoe dit concreet toegepast wordt in de praktijk.
-<br>
-Wat is IT-beveiliging?
-IT-beveiliging, ook bekend als cybersecurity, is het geheel aan maatregelen, technieken en procedures die ervoor zorgen dat netwerken, systemen en gegevens beschermd zijn tegen misbruik, sabotage of verlies. Tijdens deze opdracht leerde ik dat beveiliging breder is dan alleen maar een firewall of antivirus installeren: het omvat zowel technische als organisatorische aspecten.
-<br>
-De belangrijkste beveiligingsdomeinen die we hebben behandeld zijn:
-<br>
-Fysieke beveiliging, zoals het vergrendelen van serverkasten of het gebruik van camerabewaking.
-<br>
-Netwerkbeveiliging, bijvoorbeeld het instellen van firewalls, VPN's of segmentatie via VLANs.
-<br>
-Toegangsbeheer, waarbij je bepaalt wie welke rechten krijgt via bijvoorbeeld wachtwoordbeleid, two-factor authentication (2FA) of role-based access control (RBAC).
-<br>
-Gegevensbescherming, zoals het gebruik van encryptie en regelmatige back-ups.
-<br>
-Continuïteitsbeheer, met aandacht voor disaster recovery en incidentrespons.
-<br>
-Beveiligingsbeleid, dat binnen een organisatie afspraken vastlegt over o.a. software-installaties, updates, en toegangsrechten.
-<br>
-Deze domeinen vormen samen een gelaagde beveiligingsaanpak, waarbij het falen van één laag niet onmiddellijk het hele systeem kwetsbaar maakt.
-<br>
-Wetgeving in België en Europa
-Naast technische kennis is juridische kennis essentieel. IT’ers moeten handelen binnen de grenzen van de wet. Er zijn meerdere wetten en richtlijnen die bepalen hoe we met systemen en data moeten omgaan:
-<br>
-AVG/GDPR (Algemene Verordening Gegevensbescherming) legt op dat persoonsgegevens van Europese burgers beschermd moeten worden. Artikel 32 specificeert dat bedrijven "passende technische en organisatorische maatregelen" moeten nemen, zoals encryptie en toegangscontrole.
-<br>
-Strafwetboek artikel 550bis en 550ter verbiedt respectievelijk het binnendringen in IT-systemen zonder toestemming en het saboteren van systemen (zoals bij DDoS-aanvallen).
-<br>
-De NIS-wet verplicht kritieke sectoren in België, zoals gezondheidszorg of energiebedrijven, om hun IT-systemen extra te beveiligen en cyberincidenten te melden.
-<br>
-De EU Cybercrime Convention maakt het mogelijk dat Belgische rechtbanken ook buitenlandse cybercriminelen kunnen vervolgen – belangrijk in een geglobaliseerde wereld waar cyberaanvallen vaak van buiten de landsgrenzen komen.
-<br>
-Praktische toepassing
-De combinatie van beveiliging en wetgeving wordt tastbaar in dagelijkse IT-situaties. Enkele voorbeelden:
-<br>
-Verliest een medewerker een laptop met klantengegevens? Dan moet deze laptop versleuteld zijn met bijvoorbeeld BitLocker (AVG, Artikel 32).
-<br>
-Heeft een ex-werknemer nog toegang tot bedrijfsdata? Dan is dat een risico. Tijdige deactivatie via Active Directory is verplicht (AVG + intern beveiligingsbeleid).
-<br>
-Wordt een overheidswebsite aangevallen via een DDoS-aanval? Dan moet dit gemeld worden onder de NIS-wet, en moet het systeem beschermd zijn met DDOS-mitigatieoplossingen (bv. via een WAF).
-<br>
-Bij het maken van een website moet elk contactformulier beveiligd zijn met SSL en de opgeslagen gegevens versleuteld. Ook moet de gebruiker op de hoogte zijn van wat er met hun data gebeurt (GDPR).
-<br>
-Conclusie
-Wat ik vooral geleerd heb uit deze module, is dat IT-beveiliging niet enkel een technische verantwoordelijkheid is, maar ook een ethische en juridische. Als IT’er moet ik steeds dubbel nadenken: is deze oplossing technisch veilig? én voldoet ze aan de wet?
-<br>
-Enkele belangrijke vuistregels die ik meeneem:
-<br>
-Toegang tot systemen en gegevens mag alleen met toestemming.
-<br>
-Behandel andermans gegevens alsof het je eigen data zijn.
-<br>
-Als je twijfelt: documenteer je actie of vraag formele toestemming.
-<br>
-Privacy en beveiliging zijn geen extra’s, maar essentiële onderdelen van elk IT-project.
-<br>
-Deze inzichten zal ik in elke toekomstige opdracht en werkcontext toepassen.
-                   </p>
+                   <section>
+  <h2>Beveiliging & Wetgeving in IT-omgevingen</h2>
+  <p>
+    Beveiliging in een IT-omgeving is vandaag de dag niet meer weg te denken. In deze module heb ik inzicht verworven in wat IT-beveiliging inhoudt en welke wet- en regelgeving van toepassing is op het werken met digitale systemen en persoonsgegevens. 
+    Als toekomstige IT-professional moet ik zowel technische maatregelen kunnen implementeren als juridische verplichtingen correct kunnen naleven. 
+    Deze pagina vat mijn belangrijkste inzichten samen over beveiligingsdomeinen, relevante Belgische en Europese wetgeving, en hoe dit concreet toegepast wordt in de praktijk.
+  </p>
+
+  <h3>Wat is IT-beveiliging?</h3>
+  <p>
+    IT-beveiliging, ook bekend als cybersecurity, is het geheel aan maatregelen, technieken en procedures die ervoor zorgen dat netwerken, systemen en gegevens beschermd zijn tegen misbruik, sabotage of verlies. 
+    Tijdens deze opdracht leerde ik dat beveiliging breder is dan alleen maar een firewall of antivirus installeren: het omvat zowel technische als organisatorische aspecten.
+  </p>
+
+  <h4>Belangrijkste beveiligingsdomeinen:</h4>
+  <ul>
+    <li><strong>Fysieke beveiliging:</strong> zoals het vergrendelen van serverkasten of het gebruik van camerabewaking.</li>
+    <li><strong>Netwerkbeveiliging:</strong> bijvoorbeeld het instellen van firewalls, VPN's of segmentatie via VLANs.</li>
+    <li><strong>Toegangsbeheer:</strong> via wachtwoordbeleid, two-factor authentication (2FA) of role-based access control (RBAC).</li>
+    <li><strong>Gegevensbescherming:</strong> zoals het gebruik van encryptie en regelmatige back-ups.</li>
+    <li><strong>Continuïteitsbeheer:</strong> met aandacht voor disaster recovery en incidentrespons.</li>
+    <li><strong>Beveiligingsbeleid:</strong> met interne afspraken over software-installaties, updates en toegangsrechten.</li>
+  </ul>
+  <p>
+    Deze domeinen vormen samen een gelaagde beveiligingsaanpak, waarbij het falen van één laag niet onmiddellijk het hele systeem kwetsbaar maakt.
+  </p>
+
+  <h3>Wetgeving in België en Europa</h3>
+  <p>
+    Naast technische kennis is juridische kennis essentieel. IT’ers moeten handelen binnen de grenzen van de wet. 
+    Er zijn meerdere wetten en richtlijnen die bepalen hoe we met systemen en data moeten omgaan:
+  </p>
+  <ul>
+    <li>
+      <strong>AVG/GDPR (Algemene Verordening Gegevensbescherming):</strong> Beschermt persoonsgegevens van Europese burgers. Artikel 32 verplicht organisaties om passende technische en organisatorische maatregelen te nemen, zoals encryptie en toegangscontrole.
+    </li>
+    <li>
+      <strong>Strafwetboek artikels 550bis en 550ter:</strong> Verbieden respectievelijk het binnendringen in IT-systemen zonder toestemming en het saboteren van systemen (zoals bij DDoS-aanvallen).
+    </li>
+    <li>
+      <strong>De NIS-wet:</strong> Verplicht kritieke sectoren in België, zoals gezondheidszorg of energiebedrijven, om hun IT-systemen te beveiligen en cyberincidenten te melden.
+    </li>
+    <li>
+      <strong>EU Cybercrime Convention:</strong> Maakt het mogelijk dat Belgische rechtbanken ook buitenlandse cybercriminelen kunnen vervolgen.
+    </li>
+  </ul>
+
+  <h3>Praktische toepassing</h3>
+  <p>
+    De combinatie van beveiliging en wetgeving wordt tastbaar in dagelijkse IT-situaties. Enkele voorbeelden:
+  </p>
+  <ul>
+    <li>
+      <strong>Verlies van een laptop met klantgegevens:</strong> Full-disk encryptie zoals BitLocker is noodzakelijk (AVG, Artikel 32).
+    </li>
+    <li>
+      <strong>Ex-werknemer heeft nog toegang:</strong> Tijdige deactivatie van accounts via Active Directory (AVG + intern beleid).
+    </li>
+    <li>
+      <strong>DDoS-aanval op overheidswebsite:</strong> Beschermen via WAF en DDOS-mitigatie, en melden onder de NIS-wet.
+    </li>
+    <li>
+      <strong>Website met contactformulier:</strong> Beveiliging met SSL, versleutelde opslag van data en duidelijke privacyverklaring (GDPR).
+    </li>
+  </ul>
+
+  <h3>Conclusie</h3>
+  <p>
+    Wat ik vooral geleerd heb uit deze module, is dat IT-beveiliging niet enkel een technische verantwoordelijkheid is, maar ook een ethische en juridische. 
+    Als IT’er moet ik steeds dubbel nadenken: <em>is deze oplossing technisch veilig?</em> én <em>voldoet ze aan de wet?</em>
+  </p>
+  <p><strong>Belangrijke vuistregels die ik meeneem:</strong></p>
+  <ul>
+    <li>Toegang tot systemen en gegevens mag alleen met toestemming.</li>
+    <li>Behandel andermans gegevens alsof het je eigen data zijn.</li>
+    <li>Bij twijfel: documenteer je actie of vraag formele toestemming.</li>
+    <li>Privacy en beveiliging zijn geen extra’s, maar essentiële onderdelen van elk IT-project.</li>
+  </ul>
+  <p>
+    Deze inzichten zal ik in elke toekomstige opdracht en werkcontext toepassen.
+  </p>
+</section>
+
                 </div>
                 
                 <a href="/portfolio.html">Back to portfolio</a>

@@ -110,56 +110,77 @@
 
                 <div class="collapse" id="moreText">
        
-<p><br>
-              Routing en Switching Oefening – Netwerksegmentatie en InterVLAN Routing
-In deze opdracht heb ik gewerkt aan een uitgebreide oefening rond routing en switching, waarin alle opgedane kennis uit de lessen netwerkinfrastructuur werd gecombineerd. De focus lag op het correct instellen van VLANs, het implementeren van InterVLAN routing via een layer 3 switch, en het opzetten van statische routering om een volledig functionerend netwerk te realiseren waarbij alle toestellen met elkaar kunnen communiceren. De oefening werd uitgevoerd in Cisco Packet Tracer, met als uitgangspunt een reeds gedeeltelijk geconfigureerde netwerkomgeving.
-<br>
-Doelstelling van de opdracht
-De hoofddoelstellingen waren:
-<br>
-Het creëren van verschillende VLANs voor specifieke afdelingen (docenten, studenten, administratief personeel).
-<br>
-Het configureren van InterVLAN routing met een layer 3 switch.
-<br>
-Het toepassen van statische routering om verkeer naar het subnet 172.17.0.0/16 te kunnen leiden.
-<br>
-Het documenteren van de volledige netwerkstructuur.
-<br>
-Deze oefening bood een realistische simulatie van een professioneel bedrijfsnetwerk waarin segmentatie en beheerbaarheid centraal staan.
-<br>
-VLAN-configuratie
-Het netwerk werd opgesplitst in vier VLANs:
-<br>
-VLAN 15: Docenten (vereist capaciteit voor minstens 200 hosts, met PC1 en PC3 aangesloten).
-<br>
-VLAN 20: Studenten (minstens 600 hosts, PC2 aangesloten).
-<br>
-VLAN 35: Administratief personeel (minstens 250 hosts, PC4 aangesloten).
-<br>
-VLAN 99: Native VLAN, dat gebruikt wordt voor het trunkverkeer.
-<br>
-Voor elk VLAN heb ik een passend subnet gekozen op basis van de vereiste hostaantallen, met voldoende marge voor toekomstige uitbreiding. De bijhorende interfaces op de switches werden correct ingesteld als access- of trunkpoorten, afhankelijk van hun functie. Ook werd het native VLAN op de trunks aangepast naar VLAN 99.
-<br>
-InterVLAN Routing
-Voor de communicatie tussen de verschillende VLANs werd een layer 3 switch gebruikt. Hierop heb ik routed interfaces aangemaakt en geconfigureerd met IP-adressen volgens mijn subnetplan. Door middel van Switch Virtual Interfaces (SVI’s) werden de VLANs gekoppeld aan de juiste gateways, zodat verkeer tussen VLANs mogelijk werd. Dankzij deze configuratie konden toestellen in verschillende VLANs met elkaar communiceren via de layer 3 switch.
-<br>
-Statische routering
-Om verbinding te maken met het subnet waarin PC5 zich bevindt (172.17.0.0/16), werd statische routering toegepast. Deze route werd geconfigureerd op de L3-switch zodat verkeer naar het externe subnet correct doorgestuurd wordt. De default gateway van PC5 was al ingesteld op 172.17.255.254, wat overeenkomt met een interface in het netwerk. Na configuratie konden alle interne VLANs met PC5 communiceren.
-<br>
-Eindcontrole en troubleshooting
-Na het instellen van de VLANs, InterVLAN routing en statische routes, heb ik alle verbindingen getest met behulp van ping-commando’s. De volgende testen zijn met succes uitgevoerd:
-<br>
-Ping van PC1 naar PC4 (andere VLAN) – geslaagd.
-<br>
-Ping van PC1, PC2, PC3 en PC4 naar PC5 – geslaagd.
-<br>
-Interne communicatie binnen eenzelfde VLAN – geslaagd.
-<br>
-Tijdens het uitvoeren van de opdracht ben ik ook geconfronteerd met enkele netwerkproblemen, zoals foutief ingestelde trunkpoorten en verkeerde subnetmasks. Deze problemen heb ik opgelost door systematisch te troubleshoot'en: controleren van poortstatussen, VLAN-lidmaatschappen, en IP-instellingen.
-<br>
-Reflectie
-Deze opdracht was bijzonder leerzaam omdat het een volledige integratie vereiste van meerdere netwerkconcepten: segmentatie met VLANs, routering, subnetting en documentatie. Door met een gesimuleerde bedrijfsstructuur te werken, werd het duidelijk hoe belangrijk een goede netwerkopbouw en beheerstructuur zijn in een professionele context. Het succesvol afronden van deze opdracht heeft mijn vertrouwen in het opzetten en beheren van netwerken aanzienlijk vergroot.
-</p>
+<section>
+  <h2>Routing en Switching Oefening – Netwerksegmentatie en InterVLAN Routing</h2>
+
+  <p>
+    In deze opdracht heb ik gewerkt aan een uitgebreide oefening rond routing en switching, waarin alle opgedane kennis uit de lessen netwerkinfrastructuur werd gecombineerd. 
+    De focus lag op het correct instellen van VLANs, het implementeren van InterVLAN routing via een layer 3 switch, en het opzetten van statische routering om een volledig functionerend netwerk te realiseren waarbij alle toestellen met elkaar kunnen communiceren. 
+    De oefening werd uitgevoerd in Cisco Packet Tracer, met als uitgangspunt een reeds gedeeltelijk geconfigureerde netwerkomgeving.
+  </p>
+
+  <h3>Doelstelling van de opdracht</h3>
+  <p>De hoofddoelstellingen waren:</p>
+  <ul>
+    <li>Het creëren van verschillende VLANs voor specifieke afdelingen (docenten, studenten, administratief personeel).</li>
+    <li>Het configureren van InterVLAN routing met een layer 3 switch.</li>
+    <li>Het toepassen van statische routering om verkeer naar het subnet <code>172.17.0.0/16</code> te kunnen leiden.</li>
+    <li>Het documenteren van de volledige netwerkstructuur.</li>
+  </ul>
+  <p>
+    Deze oefening bood een realistische simulatie van een professioneel bedrijfsnetwerk waarin segmentatie en beheerbaarheid centraal staan.
+  </p>
+
+  <h3>VLAN-configuratie</h3>
+  <p>Het netwerk werd opgesplitst in vier VLANs:</p>
+  <ul>
+    <li><strong>VLAN 15 – Docenten:</strong> capaciteit voor minstens 200 hosts, PC1 en PC3 aangesloten.</li>
+    <li><strong>VLAN 20 – Studenten:</strong> capaciteit voor minstens 600 hosts, PC2 aangesloten.</li>
+    <li><strong>VLAN 35 – Administratief personeel:</strong> capaciteit voor minstens 250 hosts, PC4 aangesloten.</li>
+    <li><strong>VLAN 99 – Native VLAN:</strong> gebruikt voor trunkverkeer.</li>
+  </ul>
+  <p>
+    Voor elk VLAN heb ik een passend subnet gekozen op basis van de vereiste hostaantallen, met voldoende marge voor toekomstige uitbreiding. 
+    De bijhorende interfaces op de switches werden correct ingesteld als access- of trunkpoorten, afhankelijk van hun functie. 
+    Ook werd het native VLAN op de trunks aangepast naar VLAN 99.
+  </p>
+
+  <h3>InterVLAN Routing</h3>
+  <p>
+    Voor de communicatie tussen de verschillende VLANs werd een layer 3 switch gebruikt. 
+    Hierop heb ik routed interfaces aangemaakt en geconfigureerd met IP-adressen volgens mijn subnetplan. 
+    Via Switch Virtual Interfaces (SVI’s) werden de VLANs gekoppeld aan de juiste gateways, zodat verkeer tussen VLANs mogelijk werd. 
+    Dankzij deze configuratie konden toestellen in verschillende VLANs met elkaar communiceren via de layer 3 switch.
+  </p>
+
+  <h3>Statische routering</h3>
+  <p>
+    Om verbinding te maken met het subnet waarin PC5 zich bevindt (<code>172.17.0.0/16</code>), werd statische routering toegepast. 
+    Deze route werd geconfigureerd op de layer 3 switch zodat verkeer naar het externe subnet correct doorgestuurd werd. 
+    De default gateway van PC5 was al ingesteld op <code>172.17.255.254</code>, wat overeenkomt met een interface in het netwerk. 
+    Na configuratie konden alle interne VLANs met PC5 communiceren.
+  </p>
+
+  <h3>Eindcontrole en troubleshooting</h3>
+  <p>Na het instellen van de VLANs, InterVLAN routing en statische routes, heb ik alle verbindingen getest met behulp van <code>ping</code>-commando’s. De volgende testen zijn met succes uitgevoerd:</p>
+  <ul>
+    <li>Ping van PC1 naar PC4 (andere VLAN) – geslaagd.</li>
+    <li>Ping van PC1, PC2, PC3 en PC4 naar PC5 – geslaagd.</li>
+    <li>Interne communicatie binnen eenzelfde VLAN – geslaagd.</li>
+  </ul>
+  <p>
+    Tijdens het uitvoeren van de opdracht ben ik ook geconfronteerd met enkele netwerkproblemen, zoals foutief ingestelde trunkpoorten en verkeerde subnetmasks. 
+    Deze problemen heb ik opgelost door systematisch te troubleshoot'en: controleren van poortstatussen, VLAN-lidmaatschappen, en IP-instellingen.
+  </p>
+
+  <h3>Reflectie</h3>
+  <p>
+    Deze opdracht was bijzonder leerzaam omdat het een volledige integratie vereiste van meerdere netwerkconcepten: segmentatie met VLANs, routering, subnetting en documentatie. 
+    Door met een gesimuleerde bedrijfsstructuur te werken, werd het duidelijk hoe belangrijk een goede netwerkopbouw en beheerstructuur zijn in een professionele context. 
+    Het succesvol afronden van deze opdracht heeft mijn vertrouwen in het opzetten en beheren van netwerken aanzienlijk vergroot.
+  </p>
+</section>
+
                 </div>
                 <a href="/portfolio.html">Back to portfolio</a>
             </section>
