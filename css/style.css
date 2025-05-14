@@ -41,6 +41,9 @@ body {
   color: #eeeeee;
 }
 
+.map {
+  height: 180px;
+}
 .card
 { width: auto;}
 .card-body
