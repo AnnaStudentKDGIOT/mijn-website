@@ -41,6 +41,9 @@ a:hover {
     min-height: 180px;
 
 }
+#welkom {
+    height: 180px;
+}
 
 button {
     cursor: pointer;
