@@ -1,35 +1,40 @@
- const textElement = document.getElementById("text");
-    const selectElement = document.getElementById("language");
+async function translateText(text, sourceLang, targetLang) {
+  const response = await fetch('https://translate.argosopentech.com/translate', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      q: text,
+      source: sourceLang,
+      target: targetLang,
+    }),
+  });
 
-    // Originele tekst bewaren
-    const originalText = textElement.textContent;
+  const data = await response.json();
+  return data.translatedText;
+}
 
-    selectElement.addEventListener("change", async () => {
-      const targetLang = selectElement.value;
+const textElement = document.getElementById("text");
+const selectElement = document.getElementById("language");
 
-      // Als Nederlands gekozen is, toon originele tekst
-      if (targetLang === "nl") {
-        textElement.textContent = originalText;
-        return;
-      }
+// Originele tekst bewaren
+const originalText = textElement.textContent;
 
-      // API-call naar LibreTranslate
-      try {
-        const response = await fetch("https://libretranslate.de/translate", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            q: originalText,
-            source: "nl",
-            target: targetLang,
-            format: "text"
-          })
-        });
+selectElement.addEventListener("change", async () => {
+  const targetLang = selectElement.value;
 
-        const data = await response.json();
-        textElement.textContent = data.translatedText;
-      } catch (error) {
-        textElement.textContent = "❌ Fout bij vertalen.";
-        console.error(error);
-      }
-    });
+  // Als Nederlands gekozen is, toon originele tekst
+  if (targetLang === "nl") {
+    textElement.textContent = originalText;
+    return;
+  }
+
+  try {
+    const translatedText = await translateText(originalText, 'nl', targetLang);
+    textElement.textContent = translatedText;
+  } catch (error) {
+    textElement.textContent = "❌ Er is iets mis gegaan tijdens het vertalen.";
+    console.error(error);
+  }
+});
