@@ -112,6 +112,9 @@ button {
 { width: auto;}
 .card-body
 {width: auto;}
+div#map {
+  height: 180px;
+}
 
 .dropdown-content {
     display: block;
