@@ -41,6 +41,18 @@ body {
   color: #eeeeee;
 }
 
+
+#vertaalbalk body {
+  font-family: sans-serif;
+  padding: 2rem;
+}
+
+#vertaalbalk label, 
+#vertaalbalk select {
+  margin-right: 1rem;
+}
+
+
 div#map {
   height: 180px;
 }

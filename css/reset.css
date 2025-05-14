@@ -108,6 +108,16 @@ button {
     min-height: 120px
 
 }
+
+#vertaalbalk body {
+  font-family: sans-serif;
+  padding: 2rem;
+}
+
+#vertaalbalk label, 
+#vertaalbalk select {
+  margin-right: 1rem;
+}
 .card
 { width: auto;}
 .card-body
