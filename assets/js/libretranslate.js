@@ -6,10 +6,12 @@ async function translateText(text, sourceLang, targetLang) {
     },
     body: JSON.stringify({
       q: text,
-      source: sourceLang,
-      target: targetLang,
+      source: sourceLang ==="nl",
+      target: ["en","nl","de","es","it","fr"],
     }),
   });
+
+  
 
   const data = await response.json();
   return data.translatedText;
