@@ -38,8 +38,8 @@ a:hover {
 #APIcorner{
 
     background-color: #909091;
-    min-height: 180px;
-    min-width: 250px;
+    min-height: auto;
+    min-width: auto;
 
 }
 
