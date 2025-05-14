@@ -175,5 +175,6 @@ div#map {
 #APIcorner{
 
     background-color: #eeeeee;
+    min-height: 180px;
 
 }

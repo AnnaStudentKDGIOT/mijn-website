@@ -1,20 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* RESET & BASE STYLES */
 *,
 *::before,
@@ -49,6 +33,13 @@ a {
 
 a:hover {
     opacity: 0.8;
+}
+
+#APIcorner{
+
+    background-color: #eeeeee;
+    min-height: 180px;
+
 }
 
 button {
