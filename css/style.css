@@ -49,6 +49,9 @@ a:hover {
             padding: 20px;
             text-align: center;
         }
+#weather {
+    background-color: #062767;
+}
 
 
 button {
