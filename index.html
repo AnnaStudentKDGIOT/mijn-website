@@ -80,7 +80,7 @@
     <div class="collapse collapse-horizontal" id="collapseWidthExample">
       <div class="card card-body">
        <ul class="list-unstyled">
-         <h5 class="mb-3">📚 Currently Reading</h5>
+         <h5 class="mb-3">📚 huidige leeslijst voor boeken</h5>
     <li>
       <strong>JavaScript for Dummies</strong><br>
       <small>By Chris Minnick & Eva Holland</small>
@@ -96,8 +96,9 @@
     
         
 </aside>
-
-<form id="vertaalbalk">
+<section id="APIcorner">
+  <div id="welkom"></div>
+  <form id="vertaalbalk">
   <h1 id="text">Welkom op mijn website!</h1>
 
   <label for="language">Kies een taal:</label>
@@ -110,6 +111,7 @@
     <option value="it">Italiaans</option>
   </select>
 </form>
+</section>
 
 
   
@@ -123,6 +125,7 @@
   <section class=" container my-5 text-dark">
     <div class="row">
       <div class="col-md-8">
+        <div id="welkom"></div>
         <h2>Over Anna</h2>
         <a href="/assets/files/cv Anna Johnson17012025 (1).pdf" download class="btn btn-primary mb-3">Download CV</a>
   
@@ -133,7 +136,7 @@
   
         <!-- Collapse Button -->
         <button class="btn btn-outline-primary mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#moreText" aria-expanded="false" aria-controls="moreText">
-          Read More
+          Lees meer
         </button>
   
         <!-- Collapsible Text -->
@@ -191,28 +194,23 @@
         <div class="col-md-6">
           <form   id="contactsection" name="contactsection" method="post" data-netlify="true">
             <div class="mb-3">
-              <label for="name" class="form-label">Name*</label>
+              <label for="name" class="form-label">Naam</label>
               <input type="text" class="form-control" id="name" placeholder="Jane Smith" name="name">
             </div>
             <div class="mb-3">
-              <label for="email" class="form-label">Email address*</label>
+              <label for="email" class="form-label">E-mail</label>
               <input type="email" class="form-control" id="email" placeholder="email@website.com" name="email">
             </div>
             <div class="mb-3">
-              <label for="phone" class="form-label">Phone number*</label>
+              <label for="phone" class="form-label">Telefoon nummer</label>
               <input type="tel" class="form-control" id="phone" placeholder="555-555-5555" name="phone">
             </div>
             <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
+              <label for="message" class="form-label">Bericht</label>
               <textarea class="form-control" id="message" rows="3" name="message"></textarea>
             </div>
-            <div class="form-check mb-3">
-              <input class="form-check-input" type="checkbox" id="consent" name="consent">
-              <label class="form-check-label" for="consent">
-                I allow this website to store my submission so they can respond to my inquiry.
-              </label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+           
+            <button type="submit" class="btn btn-primary">Verzenden</button>
           </form>
         </div>
       </div>
@@ -230,8 +228,7 @@
   
   <!-- Footer -->
   <footer class=" text-dark text-center py-3">
-    <h5>Anna Ella Johnson</h5>
-    <p class="mb-0">&copy; 2025 Anna Ella Johnson. All rights reserved.</p>
+    <p class="mb-0">&copy; &copy; 2025 Anna Ella Johnson. Alle rechten voorbehouden</p>
   </footer>
 <!---->
 </body>
