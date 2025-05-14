@@ -1,61 +1,226 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-   
-
-     <!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-<!-- Bootstrap Icons -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
-
-<!-- Leaflet CSS -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-
-<!-- Reset CSS - altijd eerst -->
-<link rel="stylesheet" href="/css/reset.css">
-<!-- Jouw eigen stijl daarna -->
-<link rel="stylesheet" href="/css/style.css">
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- Leaflet JS -->
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""
-        defer></script>
-
-
-<!-- Eigen JavaScript -->
-<script src="/assets/js/leaflet.js" defer></script>
-<script src="/assets/js/libretranslate.js" defer></script>
-<script src="/assets/js/ipapi.js" defer></script>
-<script src="/assets/js/openweatherapi.js" defer></script>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactie Weergrafiek</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.131.3/build/three.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      transition: background 1s ease-in-out;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      margin-top: 50px;
+    }
+    h2 {
+      text-align: center;
+    }
+    canvas {
+      margin-top: 30px;
+    }
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+      margin: 10px 0;
+      width: 100%;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+  </style>
 </head>
 <body>
 
-    <!-- Weather Section -->
-    <div id="weather-section">
-        <h2>Weather Forecast</h2>
-        <input type="text" id="city" placeholder="Enter City" />
-        <button onclick="getWeather()">weervoorspelling</button>
+  <div class="container">
+    <h2>🌤️ Interactieve Weersvoorspelling - Real-Time Weergrafiek</h2>
+    <input type="text" id="cityInput" placeholder="Typ een stad (bijv. Amsterdam)" />
+    <button onclick="getWeather()">Zoek Weer</button>
+    <canvas id="weatherChart" height="100"></canvas>
+  </div>
 
-        <div class="weather-details" id="weather-details" style="display: none;">
-            <p><strong>Locatie:</strong> <span id="location"></span></p>
-            <p><strong>Temperatuur:</strong> <span id="temperature"></span> °C</p>
-            <p><strong>omschrijving:</strong> <span id="weather-description"></span></p>
-        </div>
+  <script>
+    const API_KEY = "JOUW_API_KEY_HIER";
+    let chartInstance = null;
+    let scene, camera, renderer, rain;
 
-        <div id="error-message" style="color: red; display: none;">kan de data niet ophalen probeer nog is een keer</div>
-    </div>
+    // Dynamische Achtergrond op basis van het weer
+    function setBackground(weatherDescription) {
+      if (weatherDescription.includes("clear")) {
+        document.body.style.backgroundImage = "url('https://example.com/sunny.jpg')";
+        addStars();
+      } else if (weatherDescription.includes("rain")) {
+        document.body.style.backgroundImage = "url('https://example.com/rain.jpg')";
+        addRain();
+      } else if (weatherDescription.includes("cloud")) {
+        document.body.style.backgroundImage = "url('https://example.com/cloudy.jpg')";
+        addClouds();
+      } else if (weatherDescription.includes("storm")) {
+        document.body.style.backgroundImage = "url('https://example.com/storm.jpg')";
+        addLightning();
+      } else {
+        document.body.style.backgroundImage = "url('https://example.com/default.jpg')";
+      }
+    }
 
-    <script>
-     
-    </script>
+    // Voeg sterren toe voor helder weer
+    function addStars() {
+      scene = new THREE.Scene();
+      camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
+      renderer = new THREE.WebGLRenderer();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      document.body.appendChild(renderer.domElement);
+
+      const geometry = new THREE.SphereGeometry(1, 32, 32);
+      const material = new THREE.MeshBasicMaterial({ color: 0xffff00 });
+      const star = new THREE.Mesh(geometry, material);
+      scene.add(star);
+
+      camera.position.z = 5;
+
+      function animate() {
+        requestAnimationFrame(animate);
+        star.rotation.x += 0.01;
+        star.rotation.y += 0.01;
+        renderer.render(scene, camera);
+      }
+      animate();
+    }
+
+    // Voeg regen toe voor regenachtig weer
+    function addRain() {
+      scene = new THREE.Scene();
+      camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
+      renderer = new THREE.WebGLRenderer();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      document.body.appendChild(renderer.domElement);
+
+      const geometry = new THREE.Geometry();
+      for (let i = 0; i < 1000; i++) {
+        const raindrop = new THREE.Vector3(
+          Math.random() * 200 - 100,
+          Math.random() * 200 - 100,
+          Math.random() * 200 - 100
+        );
+        geometry.vertices.push(raindrop);
+      }
+
+      const material = new THREE.PointsMaterial({ color: 0x00ff00, size: 0.1 });
+      rain = new THREE.Points(geometry, material);
+      scene.add(rain);
+
+      camera.position.z = 5;
+
+      function animate() {
+        requestAnimationFrame(animate);
+        rain.rotation.x += 0.01;
+        rain.rotation.y += 0.01;
+        renderer.render(scene, camera);
+      }
+      animate();
+    }
+
+    // Voeg wolken toe voor bewolkt weer
+    function addClouds() {
+      document.body.style.backgroundImage = "url('https://example.com/cloudy.jpg')";
+    }
+
+    // Voeg bliksem toe voor stormweer
+    function addLightning() {
+      document.body.style.backgroundImage = "url('https://example.com/storm.jpg')";
+    }
+
+    // Haal weerdata op en toon grafiek
+    function getWeather() {
+      const city = document.getElementById("cityInput").value.trim();
+      if (!city) {
+        alert("Typ een stad.");
+        return;
+      }
+
+      const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${API_KEY}&units=metric&lang=nl`;
+      
+      fetch(url)
+        .then(res => {
+          if (!res.ok) throw new Error("Fout bij ophalen weerdata.");
+          return res.json();
+        })
+        .then(data => {
+          const list = data.list.slice(0, 8); // Haal alleen de komende 24u op (8 datapoints)
+          const temps = list.map(point => point.main.temp);
+          const labels = list.map(point => {
+            const dt = new Date(point.dt_txt);
+            return `${dt.getHours()}:00`;
+          });
+          const weatherDescription = data.list[0].weather[0].description;
+
+          // Zet de dynamische achtergrond op basis van het weer
+          setBackground(weatherDescription);
+
+          // Maak de grafiek
+          const ctx = document.getElementById("weatherChart").getContext("2d");
+          
+          if (chartInstance) chartInstance.destroy();
+
+          chartInstance = new Chart(ctx, {
+            type: "line",
+            data: {
+              labels: labels,
+              datasets: [{
+                label: `🌡️ Temperatuur (°C)`,
+                data: temps,
+                backgroundColor: "rgba(54, 162, 235, 0.2)",
+                borderColor: "rgba(54, 162, 235, 1)",
+                borderWidth: 2,
+                fill: true,
+                tension: 0.3
+              }]
+            },
+            options: {
+              responsive: true,
+              scales: {
+                y: {
+                  beginAtZero: false
+                }
+              }
+            }
+          });
+        })
+        .catch(err => {
+          alert("Fout: " + err.message);
+        });
+    }
+
+    // Automatische locatie ophalen bij laden van de pagina
+    window.onload = function () {
+      if ("geolocation" in navigator) {
+        navigator.geolocation.getCurrentPosition(
+          position => {
+            const { latitude, longitude } = position.coords;
+            const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${API_KEY}&units=metric&lang=nl`;
+            fetch(url)
+              .then(res => res.json())
+              .then(data => {
+                const weatherDescription = data.list[0].weather[0].description;
+                setBackground(weatherDescription);
+              });
+          },
+          () => alert("Locatie kan niet worden bepaald, standaard Amsterdam gebruikt.")
+        );
+      } else {
+        alert("Geolocatie niet ondersteund. Gebruik een stadnaam.");
+      }
+    };
+  </script>
 
 </body>
 </html>
