@@ -35,7 +35,10 @@
 <script src="/assets/js/openweatherapi.js" defer></script>
 
 </head>
+ 
+
 <body>
+   <header><img src="/assets/images/polygonal19-Converted-01-e1656162218576.jpg" alt="" srcset=""></header>
   <nav class="navbar navbar-expand-lg custom-navbar">
   <div class="container-fluid">
     <a class="navbar-brand text-white" href="/index.html">
@@ -68,6 +71,9 @@
 
         <li class="nav-item">
           <a class="nav-link text-white" href="/contact.html">Contact</a>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+    Klik hier voor de aside te openen 
+  </button>
         </li>
       </ul>
     </div>
@@ -77,7 +83,29 @@
  
 </nav>
 
-  <div class="container weatherbyIP">
+   <aside class="position-fixed bg-light  top-0 start-0 border-start shadow-sm collapse-horizontal translate-middle" id="asideCollapsible" >
+    <div class="collapse collapse-horizontal" id="collapseWidthExample">
+      <div class="card card-body">
+       <ul class="list-unstyled">
+         <h5 class="mb-3">📚 huidige leeslijst voor boeken</h5>
+    <li>
+      <strong>JavaScript for Dummies</strong><br>
+      <small>By Chris Minnick & Eva Holland</small>
+    </li>
+    <li class="mt-3">
+      <strong>Netwerkbeheer met Windows Server 2019</strong><br>
+      <small>By Jan Smets</small>
+    </li>
+  </ul>
+    </div>
+
+    </div>
+    
+        
+</aside>
+<main>
+
+    <div class="container weatherbyIP">
     <h2>🌤️ Interactieve Weersvoorspelling</h2>
     <button onclick="getWeatherByIP()">Zoek Weer op je Locatie (IP)</button>
     <canvas id="weatherChart" height="100"></canvas>
@@ -85,6 +113,9 @@
 
     <a href="/portfolio.html" class="btn btn-secondary mt-3">Terug naar portfolio</a>
   </div>
+</main>
+
+
 
   
 
