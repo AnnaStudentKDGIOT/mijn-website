@@ -128,29 +128,32 @@ button {
     min-height: 120px
 
 }
-/* CSS voor actieve navigatielinks */
-
 .nav-link.active,
 .dropdown-item.active {
   font-weight: bold;
-  color: #e8e8f0 !important; /* goudkleur actieve link */
+  color: #e7e8ee !important; /* goudkleur actieve link */
 }
 
 .dropdown-menu .dropdown-item.active {
   background-color: #04163d !important;
   color: #ffffff !important;
+  z-index: 1051 !important;
+}
+.dropdown-menu {
+  z-index: 1051 !important;
 }
 
 /* Eventuele extra custom navbar-styling */
 .custom-navbar {
   background-color: #04163d;
+  z-index: 1051 !important;
+  position: relative;
 }
 
 .navbar-brand img {
   max-width: 100%;
   height: auto;
 }
-
 
 #vertaalbalk body {
   font-family: sans-serif;
