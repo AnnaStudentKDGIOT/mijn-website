@@ -135,8 +135,8 @@ button {
 }
 
 .dropdown-menu .dropdown-item.active {
-  background-color: #04163d !important;
-  color: #ffffff !important;
+  background-color: #fcfdfe !important;
+  color: #04163d !important;
   z-index: 1051 !important;
 }
 .dropdown-menu {
@@ -172,6 +172,7 @@ div#map {
   height: 180px;
 }
 
+/*
 .dropdown-content {
     display: block;
     position: absolute;
@@ -195,6 +196,8 @@ div#map {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+*/
+
 
 /* CONTAINERS */
 .container,

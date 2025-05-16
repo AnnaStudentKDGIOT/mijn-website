@@ -143,12 +143,12 @@ body {
 .nav-link.active,
 .dropdown-item.active {
   font-weight: bold;
-  color: #e7e8ee !important; /* goudkleur actieve link */
+  color: #04081a !important; /* goudkleur actieve link */
 }
 
 .dropdown-menu .dropdown-item.active {
-  background-color: #04163d !important;
-  color: #ffffff !important;
+  background-color: #fcfdfe !important;
+  color: #04163d !important;
   z-index: 1051 !important;
 }
 .dropdown-menu {
@@ -206,6 +206,7 @@ body {
 }
 
 /* DROPDOWN MENU */
+/*
 .dropdown {
   position: absolute;
 }
@@ -245,6 +246,7 @@ body {
   display: block;
 }
 
+*/
 /* LOGO */
 .logo {
   padding: 1px;
