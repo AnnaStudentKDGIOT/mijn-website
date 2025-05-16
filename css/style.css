@@ -123,11 +123,12 @@ button {
     cursor: pointer;
 }
 
-.asideCollapsible {
+#asideCollapsible {
 
     min-height: 120px;
     width: 90vw;
   max-width: 400px;
+  z-index: 3000 !important;
 
 
 }
