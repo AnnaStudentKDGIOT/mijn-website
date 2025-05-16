@@ -221,3 +221,32 @@ div#map {
     text-align: center;
     padding: 20px;
 }
+
+/* --- DROPDOWN VISUEEL VERBETEREN --- */
+.dropdown-menu {
+  background-color: #081943 !important;    /* Donkerblauw menu */
+  color: #fff !important;                  /* Tekst standaard wit */
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.dropdown-menu .dropdown-item {
+  color: #fff !important;
+  background-color: transparent !important;
+}
+
+/* HOVER: accentkleur of lichter blauw + tekst goed leesbaar */
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+  background-color: #213373 !important;    /* iets lichter blauw */
+  color: #ffd700 !important;               /* goud, of wit (#fff) voor leesbaarheid */
+  font-weight: bold;
+}
+
+/* Actieve item (optioneel: zelfde als hover) */
+.dropdown-menu .dropdown-item.active {
+  background-color: #213373 !important;
+  color: #ffd700 !important;
+  font-weight: bold;
+}
+
