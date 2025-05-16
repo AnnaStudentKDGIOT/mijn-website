@@ -128,6 +128,29 @@ button {
     min-height: 120px
 
 }
+/* CSS voor actieve navigatielinks */
+
+.nav-link.active,
+.dropdown-item.active {
+  font-weight: bold;
+  color: #e8e8f0 !important; /* goudkleur actieve link */
+}
+
+.dropdown-menu .dropdown-item.active {
+  background-color: #343a40 !important;
+  color: #ffffff !important;
+}
+
+/* Eventuele extra custom navbar-styling */
+.custom-navbar {
+  background-color: #212529;
+}
+
+.navbar-brand img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 #vertaalbalk body {
   font-family: sans-serif;
