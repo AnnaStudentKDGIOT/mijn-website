@@ -115,6 +115,31 @@ body {
   margin: 5px 0;
 }
 
+.weatherbyIP{
+   body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0; height: 100%;
+      transition: background 1s ease-in-out;
+      background-size: cover;
+    }
+    .container {
+      max-width: 900px; margin: 50px auto;
+      padding: 20px;
+      background: rgba(255,255,255,0.8);
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h2 { text-align: center; }
+    canvas { margin-top: 30px; }
+    button {
+      padding: 10px; font-size: 16px;
+      margin: 10px 0; width: 100%;
+      border-radius: 6px; border: 1px solid #ccc;
+    }
+}
+
+
+
 #mySidebar.closed {
   transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
