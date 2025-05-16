@@ -104,7 +104,9 @@ body {
 #weather-section h2 {
   text-align: center;
 }
-
+.buttonSpecial {
+  min-width: 300px;
+}
 #weather-section .weather-details {
   margin-top: 15px;
 }
