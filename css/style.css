@@ -138,6 +138,9 @@ button {
     max-width: 90vw;
   }
 }
+#asideCollapsible .collapse:not(.show) {
+  display: none !important;
+}
 
 @media (max-width: 767.98px) and (orientation: landscape) {
   #asideCollapsible {
