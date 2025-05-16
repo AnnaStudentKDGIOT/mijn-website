@@ -147,7 +147,7 @@ body {
 }
 
 .dropdown-menu .dropdown-item.active {
-  background-color: #fcfdfe !important;
+  background-color: #00060c !important;
   color: #04163d !important;
   z-index: 1051 !important;
 }
