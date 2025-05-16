@@ -149,11 +149,17 @@ body {
 .dropdown-menu .dropdown-item.active {
   background-color: #04163d !important;
   color: #ffffff !important;
+  z-index: 1051 !important;
+}
+.dropdown-menu {
+  z-index: 1051 !important;
 }
 
 /* Eventuele extra custom navbar-styling */
 .custom-navbar {
   background-color: #04163d;
+  z-index: 1051 !important;
+  position: relative;
 }
 
 .navbar-brand img {
