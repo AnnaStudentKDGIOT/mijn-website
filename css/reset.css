@@ -85,9 +85,13 @@ div#map {
   height: 180px;
 }
 .card
-{ width: auto;}
+{ width: auto;
+  height: fit-content;
+}
 .card-body
-{width: auto;}
+{width: auto;
+  height: fit-content;
+}
 /* ASIDE */
 .aside { 
     float: left; /* of right */
@@ -97,6 +101,7 @@ div#map {
     background-color: #f5f5f5;
     border-radius: 8px;
     margin-left: 25px;
+    
     z-index: 3000 !important;
 }
 
