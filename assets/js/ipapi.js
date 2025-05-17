@@ -1,7 +1,9 @@
 // IPAPI.js
+const IPINFO_TOKEN = "57ae4e2b472760";          // <-- Vul in!
+
 
 function fetchIPInfo(callback) {
-  fetch('https://ipapi.co/json/')
+  fetch(`https://ipinfo.io/json?token=${IPINFO_TOKEN}`)
     .then(response => response.json())
     .then(data => {
       // Zet hier alle gewenste info uit data
