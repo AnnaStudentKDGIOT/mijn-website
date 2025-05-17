@@ -305,6 +305,8 @@ body {
 
     background-color: #f6f6fa;
     min-height: auto;
+    height: 105px;
+    width: auto;
     min-width: auto;
 
 }
@@ -348,7 +350,7 @@ body {
 
 .BG{
    background-color: #04163d;
-  height: 125px;
+  height: 105px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

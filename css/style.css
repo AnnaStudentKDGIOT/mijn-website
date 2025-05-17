@@ -20,7 +20,7 @@
 }
 .BG{
    background-color: #04163d;
-  height: 125px;
+  height: 105px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -49,7 +49,9 @@ a:hover {
 
     background-color: #fbfbfe;
     min-height: auto;
+    height: 105px;
     min-width: auto;
+    width: auto;
 
 }
 
