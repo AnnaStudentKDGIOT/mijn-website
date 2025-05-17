@@ -304,10 +304,9 @@ body {
 #APIcorner{
 
     background-color: #f6f6fa;
-    min-height: auto;
     height: 105px;
     width: auto;
-    min-width: auto;
+    
 
 }
 #weather body {
@@ -350,7 +349,7 @@ body {
 
 .BG{
    background-color: #04163d;
-  height: 105px;
+  height: 85px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
