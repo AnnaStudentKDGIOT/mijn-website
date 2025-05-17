@@ -18,6 +18,10 @@
     color: #141C26;
     
 }
+.BG{
+  background-color: #04163d;
+  min-height: 56px;
+}
 .main {
      padding-left: 10%;
      padding-top: 10%;
