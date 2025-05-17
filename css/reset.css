@@ -347,6 +347,12 @@ body {
 }
 
 .BG{
-  background-color: #04163d;
-  min-height: 80px;
+   background-color: #04163d;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
