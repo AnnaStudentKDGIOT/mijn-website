@@ -211,7 +211,8 @@ button {
 .card-body
 {width: auto;}
 div#map {
-  height: 180px;
+  height: 360px;
+  width: 360px;
 }
 
 /*
