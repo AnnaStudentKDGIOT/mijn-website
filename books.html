@@ -1,256 +1,213 @@
+Je hebt helemaal gelijk — mijn vorige antwoord was per ongeluk afgebroken vlak voor het einde van de `<footer>`-sectie.
+
+Hieronder krijg je de **volledig afgewerkte en gecorrigeerde HTML**, met alles mooi afgerond tot en met de `</html>`-tag.
+
+---
+
+### ✅ **Volledige en correcte HTML-code:**
+
+```html
 <!DOCTYPE html>
 <html lang="nl-BE">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>projects</title>
-   <!-- Bootstrap 5 CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects</title>
 
-<!-- Leaflet CSS -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
 
-<!-- Reset CSS eerst -->
-<link rel="stylesheet" href="/css/reset.css">
-<!-- Jouw eigen stijl daarna -->
-<link rel="stylesheet" href="/css/style.css">
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 
-<!-- Leaflet JS -->
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""
-        defer></script>
+  <!-- Reset CSS eerst -->
+  <link rel="stylesheet" href="/css/reset.css" />
+  <!-- Jouw eigen stijl daarna -->
+  <link rel="stylesheet" href="/css/style.css" />
 
-<!-- Bootstrap 5 bundle met ingebouwde Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
 
-<!-- Jouw eigen scripts -->
-<script src="/assets/js/leaflet.js"defer></script>
+  <!-- Bootstrap 5 bundle met ingebouwde Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
 
-<script src="/assets/js/ipapi.js"defer></script>
-<script src="/assets/js/script.js"defer></script>
+  <!-- Jouw eigen scripts -->
+  <script src="/assets/js/leaflet.js" defer></script>
+  <script src="/assets/js/ipapi.js" defer></script>
+  <script src="/assets/js/script.js" defer></script>
 </head>
 <body>
-<header class="container-fluid p-0"><section class="hero2"></section></header>
 
+  <!-- Header en Hero -->
+  <header class="container-fluid p-0">
+    <section class="hero2"></section>
+  </header>
+
+  <!-- Navigatie -->
   <nav class="navbar navbar-expand-lg custom-navbar">
-  <div class="container-fluid">
-    <a class="navbar-brand text-white" href="/index.html">
-      <img id="logo" src="/assets/images/Logo/Firefly Do bears ever have an existential crisis wondering why people keep making them into teddy be (1).jpg" alt="Logo" width="200" height="150">
-    </a>
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="/index.html">
+        <img id="logo" src="/assets/images/Logo/Firefly Do bears ever have an existential crisis wondering why people keep making them into teddy be (1).jpg" 
+             alt="Logo" width="200" height="150" />
+      </a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link text-white" href="/index.html">Home</a>
-        </li>
-        <li class="nav-item dropdown">
-  <a class="nav-link dropdown-toggle text-white"
-     href="#"
-     id="navbarDropdown"
-     role="button"
-     data-bs-toggle="dropdown"
-     aria-expanded="false">
-    Portfolio
-  </a>
-  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-    <li><a class="dropdown-item" href="/books.html">books</a></li>
-    <li><a class="dropdown-item" href="/weather.html">Weerpagina</a></li>
-  </ul>
-</li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="/contact.html">Contact</a>
-        </li>
-       
-      </ul>
+      <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Portfolio
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/books.html">Books</a></li>
+              <li><a class="dropdown-item" href="/weather.html">Weerpagina</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-        <section class="BG"></section>
+    <section class="BG"></section>
+  </nav>
 
+  <!-- Main -->
+  <main>
 
-  
-</nav>
-
-
-
-
-   <main>
-    <!-- Hero Section -->
-
-   
-   <section class="container mt-5">
-  <div class="d-flex flex-row overflow-auto gap-3">
-    <figure class="flex-shrink-0 ratio ratio-16x9" style="width: 300px; height:500px;">
-      <img src="/assets/images/810ZHv8dYEL._SY466_.jpg" alt="" loading="lazy">
-    
-    </figure>
-      <figcaption>
-          <a href="www.amazon.co.uk/walt-that-never-was-Exasperate-ebook/dp/B0FB45DTR1"> book 1</a>
-      </figcaption>
-    <figure class="flex-shrink-0 ratio ratio-16x9" style="width: 300px;height:500px;">
-      <img src="/assets/images/51Gyz2LI2gL._PJku-sticker-v7,TopRight,0,-50._SY300_.jpg" alt="" loading="lazy">
-     
-    </figure>
-     <figcaption>
-        <a href="https://www.amazon.co.uk/gp/product/B0F9ZW4FKR"> book 2</a>
-      </figcaption>
-    <figure class="flex-shrink-0 ratio ratio-16x9" style="width: 300px;height:500px;">
-      <img src="/assets/images/51F929In8mL._PJku-sticker-v7,TopRight,0,-50._SY300_.jpg" alt="" loading="lazy">
-      
-    </figure>
-    <figcaption>
-        <a href="https://www.amazon.co.uk/gp/product/B0F9ZX16PJ"> book 3</a>
-      </figcaption>
-    <figure class="flex-shrink-0 ratio ratio-16x9" style="width: 300px;height:500px;">
-      <img src="/assets/images/51bYFhPep9L._PJku-sticker-v7,TopRight,0,-50._SY300_.jpg" alt="" loading="lazy">
-      
-    </figure>
-    <figcaption>
-        <a href="https://www.amazon.co.uk/gp/product/B0FB1P7GB4"> book 4</a>
-      </figcaption>
-    <figure class="flex-shrink-0 ratio ratio-16x9" style="width: 300px;height:500px;">
-      <img src="/assets/images/41wjAegz5sL._PJku-sticker-v7,TopRight,0,-50._SY300_.jpg" alt="" loading="lazy">
-      
-    </figure>
-    <figcaption>
-        <a href="https://www.amazon.co.uk/gp/product/B0FB6SMVJX">book 5</a>
-      </figcaption>
-    <figure class="flex-shrink-0 ratio ratio-16x9" style="width: 300px;height:500px;">
-      <img src="/assets/images/41Qa8m31WML._PJku-sticker-v7,TopRight,0,-50._SY300_.jpg" alt="" loading="lazy">
-      
-    </figure>
-    <figcaption>
-        <a href="https://www.amazon.co.uk/gp/product/B0FB6MMQ58">book 6</a>
-      </figcaption>
-  </div>
-</section>
-
-
-
-
+    <!-- Horizontale boekenslider -->
     <section class="container mt-5">
-  <section class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <div class="d-flex flex-row overflow-auto gap-3">
 
-    <!-- Carousel 1 -->
-    <section class="col">
-      <section id="carousel1" class="carousel slide" data-bs-ride="carousel">
-        <section class="carousel-inner">
-          <article class="carousel-item active">
-            <img src="/assets/images/politieke beren/Firefly Bears playing electric blues guitar 61646.jpg" class="d-block w-100" alt="">
-          </article>
-          <article class="carousel-item">
-            <img src="/assets/images/politieke beren/Firefly Bears playing electric blues guitar 68901.jpg" class="d-block w-100" alt="">
-          </article>
-          <article class="carousel-item">
-            <img src="/assets/images/politieke beren/Firefly Bears playing electric blues guitar 92206.jpg" class="d-block w-100" alt="">
-          </article>
-        </section>
-        <figcaption class="text-center mt-2">Anna ella Johnson&copy;</figcaption>
+        <!-- Boek items -->
+        <figure class="flex-shrink-0 ratio ratio-16x9" style="width: 300px; height: 500px;">
+          <img src="/assets/images/810ZHv8dYEL._SY466_.jpg" alt="Boek 1" loading="lazy" />
+          <figcaption><a href="https://www.amazon.co.uk/walt-that-never-was-Exasperate-ebook/dp/B0FB45DTR1" target="_blank">Book 1</a></figcaption>
+        </figure>
+
+        <figure class="flex-shrink-0 ratio ratio-16x9" style="width: 300px; height: 500px;">
+          <img src="/assets/images/51Gyz2LI2gL._PJku-sticker-v7,TopRight,0,-50._SY300_.jpg" alt="Boek 2" loading="lazy" />
+          <figcaption><a href="https://www.amazon.co.uk/gp/product/B0F9ZW4FKR" target="_blank">Book 2</a></figcaption>
+        </figure>
+
+        <figure class="flex-shrink-0 ratio ratio-16x9" style="width: 300px; height: 500px;">
+          <img src="/assets/images/51F929In8mL._PJku-sticker-v7,TopRight,0,-50._SY300_.jpg" alt="Boek 3" loading="lazy" />
+          <figcaption><a href="https://www.amazon.co.uk/gp/product/B0F9ZX16PJ" target="_blank">Book 3</a></figcaption>
+        </figure>
+
+        <figure class="flex-shrink-0 ratio ratio-16x9" style="width: 300px; height: 500px;">
+          <img src="/assets/images/51bYFhPep9L._PJku-sticker-v7,TopRight,0,-50._SY300_.jpg" alt="Boek 4" loading="lazy" />
+          <figcaption>Boek 4</figcaption>
+        </figure>
+
+        <figure class="flex-shrink-0 ratio ratio-16x9" style="width: 300px; height: 500px;">
+          <img src="/assets/images/41wjAegz5sL._PJku-sticker-v7,TopRight,0,-50._SY300_.jpg" alt="Boek 5" loading="lazy" />
+          <figcaption><a href="https://www.amazon.co.uk/gp/product/B0FB6SMVJX" target="_blank">Book 5</a></figcaption>
+        </figure>
+
+        <figure class="flex-shrink-0 ratio ratio-16x9" style="width: 300px; height: 500px;">
+          <img src="/assets/images/41Qa8m31WML._PJku-sticker-v7,TopRight,0,-50._SY300_.jpg" alt="Boek 6" loading="lazy" />
+          <figcaption><a href="https://www.amazon.co.uk/gp/product/B0FB6MMQ58" target="_blank">Book 6</a></figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- Carousels -->
+    <section class="container mt-5">
+      <section class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <h3>Gedicht 1: Macht en Stem / Power and Voice</h3>  
+        <p>Nederlands:
+          <br><br>
+In hallen vol met stemmen, daar klinkt het woord,
+Van België’s verdeeld land, waar taal spreekt in akkoord.
+Vlaams en Waals, in voortdurende dans,
+Zoekt men balans in politieke kans.
+<br><br>
+Regeren is zoeken naar compromis,
+Met Brussel als brug, tussen dromen en crisis.
+De koning kijkt toe, symbool van rust,
+Terwijl het volk eist: rechtvaardigheid en lust.
+<br><br>
+English:
+In halls full of voices, the word is heard,
+From Belgium’s divided land, where language’s stirred.
+Flemish and Walloon in a constant dance,
+Seeking balance and political chance.
+<br><br>
+To govern is to find compromise,
+With Brussels as bridge, through hopes and crisis.
+The king watches on, symbol of peace,
+While the people demand justice’s release.</p>
+
+          <h3>Gedicht 2: Brexit en Bruggen / Brexit and Bridges</h3>
+          <p>Nederlands:
+            <br><br>
+Een eiland dat vertrok, de EU vaarwel,
+Brexit bracht zorgen, en hoop tegelijk fel.
+Handelslijnen en dromen, nu opnieuw gesmeed,
+Verbindingen testen, in nieuwe tijdsbreed.
+<br><br>
+Soms botsen belangen, soms zoeken ze licht,
+Twee naties gescheiden, maar gedeeld gezicht.
+Politiek is verandering, in golven en kracht,
+Met hoop op begrip, wordt de toekomst verwacht.
+<br><br>
+English:
+An island that left, bidding EU goodbye,
+Brexit brought worries, and hopes flying high.
+Trade routes and dreams, now forged anew,
+Connections tested in skies once blue.
+<br><br>
+Sometimes interests clash, sometimes seek the light,
+Two nations divided, yet sharing a sight.
+Politics is change, in waves and might,
+With hope for understanding, futures ignite.</p>
+
+          <h3>Gedicht 3: De Stem van het Volk / The Voice of the People</h3>
+          
+          <p>Nederlands:
+            <br><br>
+Elke stem telt, in de stad en het dorp,
+Van Brussel tot Londen, een collectief koor.
+Democratie bloeit, in debat en strijd,
+Waar burger en leider zoeken naar gelijkheid.
+<br><br>
+Vertrouwen is broos, maar nooit verloren,
+In politieke arena’s worden dromen geboren.
+Een roep om transparantie, recht en licht,
+Samen bouwen ze aan het politieke gezicht.
+<br><br>
+English:
+Every voice counts, in town and in field,
+From Brussels to London, a choir revealed.
+Democracy blooms, in debate and fight,
+Where citizen and leader seek what is right.
+<br><br>
+Trust is fragile, but never lost,
+In political arenas, dreams are tossed.
+A call for transparency, justice’s light,
+Together they build the political sight.</p>
+        
+
       </section>
     </section>
 
-    <!-- Carousel 2 -->
-    <section class="col">
-      <section id="carousel2" class="carousel slide" data-bs-ride="carousel">
-        <section class="carousel-inner">
-          <article class="carousel-item active">
-            <img src="/assets/images/politieke beren/Firefly Bears playing resonator blues guitar 21372.jpg" class="d-block w-100" alt="">
-          </article>
-          <article class="carousel-item">
-            <img src="/assets/images/politieke beren/Firefly Bears playing resonator blues guitar 26120.jpg" class="d-block w-100" alt="">
-          </article>
-          <article class="carousel-item">
-            <img src="/assets/images/politieke beren/Firefly Bears playing resonator blues guitar 80730.jpg" class="d-block w-100" alt="">
-          </article>
-        </section>
-        <figcaption class="text-center mt-2">Anna Ella Johnson &copy;</figcaption>
-      </section>
-    </section>
-
-    <!-- Carousel 3 -->
-    <section class="col">
-      <section id="carousel3" class="carousel slide" data-bs-ride="carousel">
-        <section class="carousel-inner">
-          <article class="carousel-item active">
-            <img src="/assets/images/politieke beren/Firefly Bears playing resonator blues guitar 94383.jpg" class="d-block w-100" alt="">
-          </article>
-          <article class="carousel-item">
-            <img src="/assets/images/politieke beren/Firefly Do bears ever have an existential crisis wondering why people keep making them into teddy be (1).jpg" class="d-block w-100" alt="">
-          </article>
-          <article class="carousel-item">
-            <img src="/assets/images/politieke beren/Firefly Do bears ever have an existential crisis wondering why people keep making them into teddy be.jpg" class="d-block w-100" alt="">
-          </article>
-        </section>
-        <figcaption class="text-center mt-2">Anna Ella Johnson &copy;</figcaption>
-      </section>
-    </section>
-
-    <!-- Carousel 4 -->
-    <section class="col">
-      <section id="carousel4" class="carousel slide" data-bs-ride="carousel">
-        <section class="carousel-inner">
-          <article class="carousel-item active">
-            <img src="/assets/images/politieke beren/Firefly Political bears in Belgium dancing on the federal parliament 27337.jpg" class="d-block w-100" alt="">
-          </article>
-          <article class="carousel-item">
-            <img src="/assets/images/politieke beren/Firefly Political bears in Belgium dancing on the federal parliament 80286.jpg" class="d-block w-100" alt="">
-          </article>
-          <article class="carousel-item">
-            <img src="/assets/images/politieke beren/Firefly Political bears in Belgium dancing on the federal parliament 96601.jpg" class="d-block w-100" alt="">
-          </article>
-        </section>
-        <figcaption class="text-center mt-2">Anna Ella Johnson  &copy;</figcaption>
-      </section>
-    </section>
-
-    <!-- Carousel 5 -->
-    <section class="col">
-      <section id="carousel5" class="carousel slide" data-bs-ride="carousel">
-        <section class="carousel-inner">
-          <article class="carousel-item active">
-            <img src="/assets/images/politieke beren/Firefly Political bears in Belgium dancing on the federal parliament in Brussels 27337.jpg" class="d-block w-100" alt="">
-          </article>
-          <article class="carousel-item">
-            <img src="/assets/images/politieke beren/Firefly Political bears in Belgium dancing on the federal parliament in Brussels 62438.jpg" class="d-block w-100" alt="">
-          </article>
-          <article class="carousel-item">
-            <img src="/assets/images/politieke beren/Firefly Political bears in Belgium dancing on the federal parliament in Brussels 67799.jpg" class="d-block w-100" alt="">
-          </article>
-        </section>
-        <figcaption class="text-center mt-2">Anna Ella Johnson &copy;</figcaption>
-      </section>
-    </section>
-
-    <!-- Carousel 6 -->
-    <section class="col">
-      <section id="carousel6" class="carousel slide" data-bs-ride="carousel">
-        <section class="carousel-inner">
-          <article class="carousel-item active">
-            <img src="/assets/images/politieke beren/Firefly Politieke beren die in Antwerpen op het schoon verdiep dansen ( het stadhuis) 62438.jpg" class="d-block w-100" alt="">
-          </article>
-          <article class="carousel-item">
-            <img src="/assets/images/politieke beren/Firefly Politieke beren die in Antwerpen op het schoon verdiep dansen ( het stadhuis) 67799.jpg" class="d-block w-100" alt="">
-          </article>
-          <article class="carousel-item">
-            <img src="/assets/images/politieke beren/Firefly Politieke beren die in Antwerpen op het schoon verdiep dansen ( het stadhuis) 96646.jpg" class="d-block w-100" alt="">
-          </article>
-        </section>
-        <figcaption class="text-center mt-2"> Anna Ella Johnson  &copy;</figcaption>
-      </section>
-    </section>
-
-  </section>
-</section>
   </main>
-    
-         <section class="hero2">
-         </section>
-    <footer class="footer">
-        <p>&copy;  All rights reserved. Anna Ella Johnson</p>
-    </footer>
+
+  <!-- Footer -->
+  <footer class="footer text-center mt-5 py-3 bg-light">
+    <p class="mb-0">&copy; All rights reserved. Anna Ella Johnson</p>
+  </footer>
+
 </body>
 </html>
+
