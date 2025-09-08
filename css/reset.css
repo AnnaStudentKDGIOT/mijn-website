@@ -180,6 +180,8 @@ body {
   color: #04081a !important; /* goudkleur actieve link */
 }
 
+
+
 .dropdown-menu .dropdown-item.active {
   background-color: #00060c !important;
   color: #04163d !important;
