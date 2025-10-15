@@ -230,7 +230,9 @@ body {
   align-items: center;
 }
 
-
+.hero2 {
+  background-image: url('/assets/images/daylight-environment-forest-459225.jpg');
+}
 
 .hero h1 {
   color: white;
